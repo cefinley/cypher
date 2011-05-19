@@ -1,0 +1,108 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateRgTasks (20110519131608)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "rg_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar(255), "schedule" varchar(255), "worktype" varchar(255), "namespace" varchar(255), "worker" varchar(255), "operation" varchar(255), "url" varchar(255), "schema" varchar(255), "skip_rehosting" boolean, "disable_validation" boolean, "update_if_exists" boolean, "incremental" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110519131608')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("rg_tasks")[0m
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-19 09:16:31) [GET]
+  [4;36;1mRgTask Load (0.5ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 68ms (View: 63, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-19 09:16:34) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+Completed in 184ms (View: 178, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/new]
+
+
+Processing RgTasksController#create (for 127.0.0.1 at 2011-05-19 09:18:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"JSobVH3/jnK6qdczJpJTaZ6PSsqYFDtMGs5XvVFNYVo=", "rg_task"=>{"incremental"=>"1", "worktype"=>"workling", "schema"=>"netgreen", "namespace"=>"Chores", "schedule"=>"cron( 22 18, 18 * * * )", "url"=>"http://api.brightcove.com/services/library?command=find_all_videos&output=mrss&sort_by=PUBLISH_DATE&sort_order=DESC&media_delivery=http&token=UfcY4FAbwdJ2_D9GQtVe9wzNirVsps6etc3Iv73bdhqck90lNde0PQ..&page_number=%02d", "disable_validation"=>"0", "skip_rehosting"=>"0", "operation"=>"from_feed", "update_if_exists"=>"0", "worker"=>"import_videos", "provider"=>"NetGreen"}}
+  [4;35;1mRgTask Create (31.8ms)[0m   [0mINSERT INTO "rg_tasks" ("created_at", "worktype", "incremental", "schedule", "namespace", "schema", "updated_at", "url", "disable_validation", "operation", "skip_rehosting", "provider", "worker", "update_if_exists") VALUES('2011-05-19 13:18:36', 'workling', 't', 'cron( 22 18, 18 * * * )', 'Chores', 'netgreen', '2011-05-19 13:18:36', 'http://api.brightcove.com/services/library?command=find_all_videos&output=mrss&sort_by=PUBLISH_DATE&sort_order=DESC&media_delivery=http&token=UfcY4FAbwdJ2_D9GQtVe9wzNirVsps6etc3Iv73bdhqck90lNde0PQ..&page_number=%02d', 'f', 'from_feed', 'f', 'NetGreen', 'import_videos', 'f')[0m
+Redirected to http://0.0.0.0:3000/rg_tasks/1
+Completed in 96ms (DB: 32) | 302 Found [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-19 09:18:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.4ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 39ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-19 09:18:43) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-19 09:20:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.5ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 86ms (View: 77, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#edit (for 127.0.0.1 at 2011-05-19 09:20:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRgTask Load (0.4ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/edit
+Completed in 51ms (View: 44, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1/edit]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-19 09:20:30) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-19 09:24:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRgTask Load (0.4ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-19 09:40:08) [GET]
+  [4;36;1mRgTask Load (0.9ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 79ms (View: 73, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-19 09:41:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRgTask Load (0.5ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 91ms (View: 83, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/1]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" LIMIT 1[0m

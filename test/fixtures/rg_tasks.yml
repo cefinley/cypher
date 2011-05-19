@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  provider: MyString
+  schedule: MyString
+  worktype: MyString
+  namespace: MyString
+  worker: MyString
+  operation: MyString
+  url: MyString
+  schema: MyString
+  skip_rehosting: false
+  disable_validation: false
+  update_if_exists: false
+  incremental: false
+
+two:
+  provider: MyString
+  schedule: MyString
+  worktype: MyString
+  namespace: MyString
+  worker: MyString
+  operation: MyString
+  url: MyString
+  schema: MyString
+  skip_rehosting: false
+  disable_validation: false
+  update_if_exists: false
+  incremental: false

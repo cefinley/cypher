@@ -1,0 +1,63 @@
+<p>
+  <b>Provider:</b>
+  <%=h @rg_task.provider %>
+</p>
+
+<p>
+  <b>Schedule:</b>
+  <%=h @rg_task.schedule %>
+</p>
+
+<p>
+  <b>Worktype:</b>
+  <%=h @rg_task.worktype %>
+</p>
+
+<p>
+  <b>Namespace:</b>
+  <%=h @rg_task.namespace %>
+</p>
+
+<p>
+  <b>Worker:</b>
+  <%=h @rg_task.worker %>
+</p>
+
+<p>
+  <b>Operation:</b>
+  <%=h @rg_task.operation %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @rg_task.url %>
+</p>
+
+<p>
+  <b>Schema:</b>
+  <%=h @rg_task.schema %>
+</p>
+
+<p>
+  <b>Skip rehosting:</b>
+  <%=h @rg_task.skip_rehosting %>
+</p>
+
+<p>
+  <b>Disable validation:</b>
+  <%=h @rg_task.disable_validation %>
+</p>
+
+<p>
+  <b>Update if exists:</b>
+  <%=h @rg_task.update_if_exists %>
+</p>
+
+<p>
+  <b>Incremental:</b>
+  <%=h @rg_task.incremental %>
+</p>
+
+
+<%= link_to 'Edit', edit_rg_task_path(@rg_task) %> |
+<%= link_to 'Back', rg_tasks_path %>
