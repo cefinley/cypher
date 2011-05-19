@@ -106,3 +106,99 @@ Rendering template within layouts/rg_tasks
 Rendering rg_tasks/show
 Completed in 91ms (View: 83, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/1]
   [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" LIMIT 1[0m
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-19 09:52:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.5ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 74ms (View: 65, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#edit (for 127.0.0.1 at 2011-05-19 09:52:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRgTask Load (0.5ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/edit
+Completed in 31ms (View: 24, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1/edit]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-19 09:52:15) [GET]
+  [4;36;1mRgTask Load (0.7ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-19 09:52:32) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-19 09:55:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.4ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 77ms (View: 69, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-19 09:55:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 132ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-19 09:55:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.6ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-19 09:55:18) [GET]
+  [4;35;1mRgTask Load (0.7ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-19 09:56:25) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+Completed in 27ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/new]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-19 09:56:45) [GET]
+  [4;36;1mRgTask Load (0.7ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-19 09:56:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRgTask Load (0.4ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-19 09:56:55) [GET]
+  [4;36;1mRgTask Load (0.7ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-19 09:56:58) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/new]
+  [4;36;1mRgTask Load (0.9ms)[0m   [0;1mSELECT * FROM "rg_tasks" LIMIT 1[0m
