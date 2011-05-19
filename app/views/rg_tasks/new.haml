@@ -1,0 +1,54 @@
+%h1 New Cypher Task
+- form_for(@rg_task) do |f|
+  = f.error_messages
+  %p
+    = f.label :provider
+    %br/
+    = f.text_field :provider
+  %p
+    = f.label :schedule
+    %br/
+    = f.text_field :schedule
+  %p
+    = f.label :type
+    %br/
+    = f.text_field :worktype
+  %p
+    = f.label :namespace
+    %br/
+    = f.text_field :namespace
+  %p
+    = f.label :worker
+    %br/
+    = f.text_field :worker
+  %p
+    = f.label :operation
+    %br/
+    = f.text_field :operation
+  %p
+    = f.label :url
+    %br/
+    = f.text_field :url
+  %p
+    = f.label :schema
+    %br/
+    = f.text_field :schema
+  %p
+    = f.label :skip_rehosting
+    %br/
+    = f.check_box :skip_rehosting
+  %p
+    = f.label :disable_validation
+    %br/
+    = f.check_box :disable_validation
+  %p
+    = f.label :update_if_exists
+    %br/
+    = f.check_box :update_if_exists
+  %p
+    = f.label :incremental
+    %br/
+    = f.check_box :incremental
+  %p
+    = f.submit 'Create'
+= link_to 'Back', rg_tasks_path

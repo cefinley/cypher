@@ -5,7 +5,7 @@ class RgTasksController < ApplicationController
     @rg_tasks = RgTask.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.haml
       format.xml  { render :xml => @rg_tasks }
     end
   end
@@ -80,4 +80,8 @@ class RgTasksController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def cronhelp
+  end
+  
 end

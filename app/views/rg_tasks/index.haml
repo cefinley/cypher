@@ -1,4 +1,4 @@
-%h1 RealGravity Morpheus Schedule
+%h1 Cypher: Morpheus Schedule
 %table
   %tr
     %th Provider
@@ -7,7 +7,7 @@
     %th Namespace
     %th Worker
     %th Operation
-    %th Url
+    //%th Url
     %th Schema
     %th Skip Rehosting
     %th Disable Validation
@@ -21,7 +21,7 @@
       %td= h rg_task.namespace
       %td= h rg_task.worker
       %td= h rg_task.operation
-      %td= h rg_task.url
+      //%td= h rg_task.url
       %td= h rg_task.schema
       %td= h rg_task.skip_rehosting
       %td= h rg_task.disable_validation
@@ -30,6 +30,7 @@
       %td= link_to 'Show', rg_task
       %td= link_to 'Edit', edit_rg_task_path(rg_task)
       %td= link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete
-      %td= link_to 'Run Now', rg_task_path
+      %td= link_to 'Run Now', rg_task
 %br/
-= link_to 'New rg_task', new_rg_task_path
+= link_to 'New Cypher Task', new_rg_task_path
+= link_to 'Help Reading Cron Objects'
