@@ -1,17 +1,17 @@
-<h1>Listing rg_tasks</h1>
+<h1>RealGravity Morpheus Schedule</h1>
 
 <table>
   <tr>
     <th>Provider</th>
     <th>Schedule</th>
-    <th>Worktype</th>
+    <th>Type</th>
     <th>Namespace</th>
     <th>Worker</th>
     <th>Operation</th>
     <th>Url</th>
     <th>Schema</th>
-    <th>Skip rehosting</th>
-    <th>Disable validation</th>
+    <th>Skip Rehosting</th>
+    <th>Disable Validation</th>
     <th>Update if exists</th>
     <th>Incremental</th>
   </tr>
@@ -33,8 +33,8 @@
     <td><%= link_to 'Show', rg_task %></td>
     <td><%= link_to 'Edit', edit_rg_task_path(rg_task) %></td>
     <td><%= link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete %></td>
-    <td><%= link_to 'Run Now', rg_task %></td>
- </tr>
+    <td><%= link_to 'Run Now', rg_task_path %></td>
+  </tr>
 <% end %>
 </table>
 
