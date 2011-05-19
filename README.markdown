@@ -1,11 +1,12 @@
-Cypher: Morpheus Scheduler GUI
+#Cypher: Morpheus Scheduler GUI
+
 * Author: Corey Finley
 * Date: Wed May 18, 2011
 * Version: 0.1.0
 
 #Goals of the project
 
-Cypher is a visual scheduler for Morpheus which will include the following functionallity
+Cypher is a visual scheduler for Morpheus which will include the following functionality
 
 * Veiw current scheduled task
 * Update current scheduled task
