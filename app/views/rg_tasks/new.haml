@@ -2,6 +2,10 @@
 - form_for(@rg_task) do |f|
   = f.error_messages
   %p
+    = f.label :task_title
+    %br/
+    = f.text_field :task_title
+  %p
     = f.label :provider
     %br/
     = f.text_field :provider

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110519131608) do
+ActiveRecord::Schema.define(:version => 20110520131237) do
 
   create_table "rg_tasks", :force => true do |t|
     t.string   "provider"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20110519131608) do
     t.boolean  "incremental"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "task_title"
   end
 
 end
