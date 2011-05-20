@@ -1582,3 +1582,351 @@ Processing RgTasksController#new (for 127.0.0.1 at 2011-05-19 16:49:10) [GET]
 Rendering template within layouts/rg_tasks
 Rendering rg_tasks/new
 Completed in 41ms (View: 33, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/new]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:23:56) [GET]
+  [4;36;1mRgTask Load (1.7ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #11 of app/views/layouts/rg_tasks.haml:
+8:   %body
+9:     %div 
+10:       container
+11:         %div
+12:     %p{:style => "color: green"}= notice
+13:     = yield
+
+    app/views/layouts/rg_tasks.haml:11
+    haml (3.1.1) lib/haml/parser.rb:228:in `plain'
+    haml (3.1.1) lib/haml/parser.rb:208:in `process_line'
+    haml (3.1.1) lib/haml/parser.rb:148:in `parse'
+    haml (3.1.1) lib/haml/engine.rb:124:in `initialize'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (778.8ms)
+Rendered rescues/_request_and_response (33.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:24:15) [GET]
+  [4;35;1mRgTask Load (1.5ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined local variable or method `print_date' for #<ActionView::Base:0x1036425e0>) on line #11 of app/views/layouts/rg_tasks.haml:
+8:   %body
+9:     #container
+10:       .left.column
+11:         #date= print_date
+12:     %p{:style => "color: green"}= notice
+13:     = yield
+
+    app/views/layouts/rg_tasks.haml:11:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (133.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:24:24) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined local variable or method `print_date' for #<ActionView::Base:0x10375d9e8>) on line #11 of app/views/layouts/rg_tasks.haml:
+8:   %body
+9:     #container
+10:       .left.column
+11:         #date= print_date
+12:     %p{:style => "color: green"}= notice
+13:     = yield
+
+    app/views/layouts/rg_tasks.haml:11:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:24:26) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined local variable or method `print_date' for #<ActionView::Base:0x1033f5cb0>) on line #11 of app/views/layouts/rg_tasks.haml:
+8:   %body
+9:     #container
+10:       .left.column
+11:         #date= print_date
+12:     %p{:style => "color: green"}= notice
+13:     = yield
+
+    app/views/layouts/rg_tasks.haml:11:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (63.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:24:30) [GET]
+  [4;36;1mRgTask Load (14.2ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 36ms (View: 17, DB: 14) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:25:48) [GET]
+  [4;35;1mRgTask Load (32.1ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 56ms (View: 19, DB: 32) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:43:31) [GET]
+  [4;36;1mRgTask Load (9.2ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 142ms (View: 128, DB: 9) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:44:59) [GET]
+  [4;35;1mRgTask Load (23.3ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 118ms (View: 87, DB: 23) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:45:01) [GET]
+  [4;36;1mRgTask Load (1.1ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:45:10) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 1986ms (View: 1980, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-05-20 08:46:30) [GET]
+
+ActionController::RoutingError (No route matches "/rg_taskss" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 08:47:21) [GET]
+  Parameters: {"id"=>"apple"}
+  [4;36;1mRgTask Load (0.2ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find RgTask with ID=apple):
+  app/controllers/rg_tasks_controller.rb:16:in `show'
+
+Rendered rescues/_trace (49.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRgTasks (20110519131608)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("rg_tasks")[0m
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:48:30) [GET]
+  [4;35;1mRgTask Load (13.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 31ms (View: 12, DB: 14) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 08:48:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.4ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 98ms (View: 90, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:48:36) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:50:45) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 168ms (View: 162, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:50:46) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:51:13) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-05-20 08:51:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/appplication.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:52:23) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-05-20 08:52:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/appplication.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:52:24) [GET]
+  [4;36;1mRgTask Load (0.9ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-05-20 08:52:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/appplication.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:53:21) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 66ms (View: 60, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-05-20 08:53:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/appplication.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:58:48) [GET]
+  [4;36;1mRgTask Load (19.1ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 77ms (View: 52, DB: 19) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 08:59:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRgTask Load (0.4ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 2) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 44ms (View: 37, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/2]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 08:59:24) [GET]
+  [4;36;1mRgTask Load (1.1ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 80ms (View: 74, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:01:52) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 28ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:02:21) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 09:05:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRgTask Load (0.4ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:05:14) [GET]
+  [4;36;1mRgTask Load (0.9ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 09:05:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRgTask Load (0.4ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#edit (for 127.0.0.1 at 2011-05-20 09:05:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.5ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/edit
+Completed in 171ms (View: 89, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1/edit]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:05:23) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]

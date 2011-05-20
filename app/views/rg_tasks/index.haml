@@ -3,30 +3,30 @@
   %tr
     %th Provider
     %th Schedule
-    %th Type
-    %th Namespace
-    %th Worker
-    %th Operation
+    //%th Type
+    //%th Namespace
+    //%th Worker
+    //%th Operation
     //%th Url
-    %th Schema
-    %th Skip Rehosting
-    %th Disable Validation
-    %th Update if exists
-    %th Incremental
+    //%th Schema
+    //%th Skip Rehosting
+    //%th Disable Validation
+    //%th Update if exists
+    //%th Incremental
   - @rg_tasks.each do |rg_task|
     %tr
       %td= h rg_task.provider
       %td= h rg_task.schedule
-      %td= h rg_task.worktype
-      %td= h rg_task.namespace
-      %td= h rg_task.worker
-      %td= h rg_task.operation
+      //%td= h rg_task.worktype
+      //%td= h rg_task.namespace
+      //%td= h rg_task.worker
+      //%td= h rg_task.operation
       //%td= h rg_task.url
-      %td= h rg_task.schema
-      %td= h rg_task.skip_rehosting
-      %td= h rg_task.disable_validation
-      %td= h rg_task.update_if_exists
-      %td= h rg_task.incremental
+      //%td= h rg_task.schema
+      //%td= h rg_task.skip_rehosting
+      //%td= h rg_task.disable_validation
+      //%td= h rg_task.update_if_exists
+      //%td= h rg_task.incremental
       %td= link_to 'Show', rg_task
       %td= link_to 'Edit', edit_rg_task_path(rg_task)
       %td= link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete
