@@ -1,0 +1,19 @@
+=== 0.1.0 / 2011-05-18
+
+* 1 major enhancement
+
+  * Build Rails application Nebuchadnezzar
+
+=== 0.2.0 / 2011-05-19
+
+* 1 major enhancement
+
+  * Rebuilt Rails application Cypher
+
+=== 1.0.0 / 2011-5-20
+
+* 2 major enhancements
+  
+  * Working local prototype of site
+  * Generated more attractive CSS stylesheet
+  * Added Task Title field to all aspects
