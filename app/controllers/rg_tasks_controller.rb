@@ -81,7 +81,13 @@ class RgTasksController < ApplicationController
     end
   end
   
-  def cronhelp
+  def runnow
+     @rg_task = RgTask.find(params[:id])
+
+      respond_to do |format|
+        format.html { redirect_to(rg_tasks_url) }
+        format.xml  { head :ok }
+      end
   end
   
 end
