@@ -2,7 +2,7 @@
 
 * Author: Corey Finley
 * Date: Wed May 18, 2011
-* Version: 0.2.0
+* Version: 1.0.0
 
 #Goals of the project
 
