@@ -4883,3 +4883,845 @@ Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:52:57) [GET]
 Rendering template within layouts/rg_tasks
 Rendering rg_tasks/index
 Completed in 29ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 10:57:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.6ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:57:18) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 10:57:20) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+Completed in 105ms (View: 97, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/new]
+
+
+Processing RgTasksController#create (for 127.0.0.1 at 2011-05-20 10:59:33) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"8iRDu52DRiT9PUbJBHPgKE+r6IyzC2hsUTI5W1OWlm4=", "rg_task"=>{"incremental"=>"0", "worktype"=>"workling", "schema"=>"splash", "namespace"=>"", "schedule"=>"cron( 22 15, 20 * * *)", "url"=>"http://proxy.realgravity.com/splashrss.mainstreamdata.com/mrss/splashvideo.ashx?feed=1&customerid=SPL-BED31BA6-A5AD", "disable_validation"=>"0", "skip_rehosting"=>"0", "operation"=>"from_feed", "update_if_exists"=>"0", "worker"=>"import_videos", "provider"=>"Splash", "task_title"=>"splash_incremental"}}
+  [4;36;1mRgTask Create (0.5ms)[0m   [0;1mINSERT INTO "rg_tasks" ("created_at", "worktype", "incremental", "schedule", "namespace", "schema", "updated_at", "url", "disable_validation", "operation", "skip_rehosting", "provider", "worker", "update_if_exists", "task_title") VALUES('2011-05-20 14:59:33', 'workling', 'f', 'cron( 22 15, 20 * * *)', '', 'splash', '2011-05-20 14:59:33', 'http://proxy.realgravity.com/splashrss.mainstreamdata.com/mrss/splashvideo.ashx?feed=1&customerid=SPL-BED31BA6-A5AD', 'f', 'from_feed', 'f', 'Splash', 'import_videos', 'f', 'splash_incremental')[0m
+Redirected to http://0.0.0.0:3000/rg_tasks/3
+Completed in 16ms (DB: 1) | 302 Found [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 10:59:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRgTask Load (0.6ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 3) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/3]
+
+
+Processing RgTasksController#edit (for 127.0.0.1 at 2011-05-20 10:59:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRgTask Load (0.5ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 3) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/edit
+Completed in 48ms (View: 39, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/3/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRgTasks (20110519131608)
+Migrating to AddMyColumnToRgTasks (20110520131237)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("rg_tasks")[0m
+
+
+Processing RgTasksController#edit (for 127.0.0.1 at 2011-05-20 11:01:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mRgTask Load (1.7ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 3) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/edit
+Completed in 2481ms (View: 2411, DB: 2) | 200 OK [http://0.0.0.0/rg_tasks/3/edit]
+
+
+Processing RgTasksController#edit (for 127.0.0.1 at 2011-05-20 11:01:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRgTask Load (0.5ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 3) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/edit
+Completed in 40ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/3/edit]
+
+
+Processing RgTasksController#update (for 127.0.0.1 at 2011-05-20 11:01:52) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"8iRDu52DRiT9PUbJBHPgKE+r6IyzC2hsUTI5W1OWlm4=", "id"=>"3", "rg_task"=>{"incremental"=>"0", "worktype"=>"workling", "schema"=>"splash", "namespace"=>"", "schedule"=>"cron( 22 15, 20 * * *)", "url"=>"http://proxy.realgravity.com/splashrss.mainstreamdata.com/mrss/splashvideo.ashx?feed=1&customerid=SPL-BED31BA6-A5AD", "disable_validation"=>"0", "skip_rehosting"=>"0", "operation"=>"from_feed", "update_if_exists"=>"0", "worker"=>"import_videos", "provider"=>"Splash", "task_title"=>"splash_incremental"}}
+  [4;35;1mRgTask Load (0.5ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 3) [0m
+Redirected to http://0.0.0.0:3000/rg_tasks/3
+Completed in 14ms (DB: 1) | 302 Found [http://0.0.0.0/rg_tasks/3]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 11:01:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mRgTask Load (0.6ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 3) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks/3]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:01:55) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:01:57) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x1034650d8>) on line #59 of app/views/rg_tasks/new.haml:
+56:     %p
+57:       = f.label :run_now
+58:       %br/
+59:       = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (73.6ms)
+Rendered rescues/_request_and_response (19.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:02:14) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x10344ff58>) on line #59 of app/views/rg_tasks/new.haml:
+56:     %p
+57:       = f.label :run_now
+58:       %br/
+59:       = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (150.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:02:16) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x1035490f8>) on line #59 of app/views/rg_tasks/new.haml:
+56:     %p
+57:       = f.label :run_now
+58:       %br/
+59:       = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (148.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:02:21) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+Completed in 156ms (View: 149, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRgTasks (20110519131608)
+Migrating to AddMyColumnToRgTasks (20110520131237)
+Migrating to AddRunNow (20110520150313)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110520150313')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("rg_tasks")[0m
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:03:55) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x10346b208>) on line #59 of app/views/rg_tasks/new.haml:
+56:     %p
+57:       = f.label :run_now
+58:       %br/
+59:       = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (72.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:04:05) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:04:07) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x103368090>) on line #59 of app/views/rg_tasks/new.haml:
+56:     %p
+57:       = f.label :run_now
+58:       %br/
+59:       = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (72.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:06:10) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x103432c28>) on line #59 of app/views/rg_tasks/new.haml:
+56:     %p
+57:       = f.label :run_now
+58:       %br/
+59:       = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (148.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:06:12) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x103528a10>) on line #59 of app/views/rg_tasks/new.haml:
+56:     %p
+57:       = f.label :run_now
+58:       %br/
+59:       = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (148.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRgTasks (20110519131608)
+Migrating to AddMyColumnToRgTasks (20110520131237)
+Migrating to AddRunNow (20110520150313)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("rg_tasks")[0m
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:07:57) [GET]
+  [4;35;1mRgTask Load (1.2ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 11:08:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRgTask Load (0.5ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 2) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/2]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:08:01) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:08:03) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x1033be300>) on line #59 of app/views/rg_tasks/new.haml:
+56:     %p
+57:       = f.label :run_now
+58:       %br/
+59:       = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (67.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRgTasks (20110519131608)
+Migrating to AddMyColumnToRgTasks (20110520131237)
+Migrating to AddRunNow (20110520150313)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("rg_tasks")[0m
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:11:56) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x103460c18>) on line #59 of app/views/rg_tasks/new.haml:
+56:     %p
+57:       = f.label :run_now
+58:       %br/
+59:       = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (142.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:12:56) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x1035403e0>) on line #59 of app/views/rg_tasks/new.haml:
+56:   %p
+57:     = f.label :run_now
+58:     %br/
+59:     = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (145.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:12:57) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x103538cf8>) on line #59 of app/views/rg_tasks/new.haml:
+56:   %p
+57:     = f.label :run_now
+58:     %br/
+59:     = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (146.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:13:01) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:13:09) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x10352e730>) on line #59 of app/views/rg_tasks/new.haml:
+56:   %p
+57:     = f.label :run_now
+58:     %br/
+59:     = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (142.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:13:19) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x1035de158>) on line #59 of app/views/rg_tasks/new.haml:
+56:   %p
+57:     = f.label :run_now
+58:     %br/
+59:     = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (141.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:13:20) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+
+ActionView::TemplateError (undefined method `run_now' for #<RgTask:0x1035d5f58>) on line #59 of app/views/rg_tasks/new.haml:
+56:   %p
+57:     = f.label :run_now
+58:     %br/
+59:     = f.check_box :run_now
+60:   %p
+61:     = f.submit 'Create'
+62: = link_to 'Back', rg_tasks_path
+
+    app/views/rg_tasks/new.haml:59:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:229:in `form_for'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `call'
+    haml (3.1.1) lib/haml/helpers.rb:589:in `haml_bind_proc'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:235:in `form_for'
+    app/views/rg_tasks/new.haml:2:in `_run_haml_app47views47rg_tasks47new46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:29:in `new'
+
+Rendered rescues/_trace (142.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#new (for 127.0.0.1 at 2011-05-20 11:13:44) [GET]
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/new
+Completed in 44ms (View: 36, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/new]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:14:09) [GET]
+  [4;35;1mRgTask Load (1.1ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:15:00) [GET]
+  [4;36;1mRgTask Load (1.2ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 30ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:15:19) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:17:08) [GET]
+  [4;36;1mRgTask Load (1.1ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+ERROR: compiling _run_haml_app47views47rg_tasks47index46haml RAISED compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...f.submit 'Show Detail' link_to rg_task
+                              ^
+Function body:           def _run_haml_app47views47rg_tasks47index46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_attrs=>true, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :escape_html=>false, :format=>:xhtml, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Cypher: Morpheus Schedule</h1>\n<table>\n  <tr>\n    <th></th>\n    <th>Task Title</th>\n    <th>Provider</th>\n    <th>Schedule</th>\n    <!-- /%th Type -->\n    <!-- /%th Namespace -->\n    <!-- /%th Worker -->\n    <!-- /%th Operation -->\n    <!-- /%th Url -->\n    <!-- /%th Schema -->\n    <!-- /%th Skip Rehosting -->\n    <!-- /%th Disable Validation -->\n    <!-- /%th Update if exists -->\n    <!-- /%th Incremental -->\n  </tr>\n", 1, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @rg_tasks.each do |rg_task|
+_hamlout.push_text("  <tr>\n    <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_false_false_true_false((f.submit 'Show Detail' link_to rg_task
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h rg_task.task_title
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h rg_task.provider
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h rg_task.schedule
+));}</td>\n    <!-- /%td= h rg_task.worktype -->\n    <!-- /%td= h rg_task.namespace -->\n    <!-- /%td= h rg_task.worker -->\n    <!-- /%td= h rg_task.operation -->\n    <!-- /%td= h rg_task.url -->\n    <!-- /%td= h rg_task.schema -->\n    <!-- /%td= h rg_task.skip_rehosting -->\n    <!-- /%td= h rg_task.disable_validation -->\n    <!-- /%td= h rg_task.update_if_exists -->\n    <!-- /%td= h rg_task.incremental -->\n    <td>#{_hamlout.adjust_tabs(1); 
+
+
+
+
+
+
+
+
+
+_hamlout.format_script_false_true_false_false_false_true_false((link_to 'Edit', edit_rg_task_path(rg_task)
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Run Now'
+));}</td>\n  </tr>\n", -1, false);end
+_hamlout.push_text("</table>\n<br />\n#{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( link_to 'New Cypher Task', new_rg_task_path
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( link_to 'Help Reading Cron'
+));}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:43:in `compile!'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/controllers/rg_tasks_controller.rb:7:in `index'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...f.submit 'Show Detail' link_to rg_task
+                              ^) on line #20 of app/views/rg_tasks/index.haml:
+17:     //%th Incremental
+18:   - @rg_tasks.each do |rg_task|
+19:     %tr
+20:       %td= f.submit 'Show Detail' link_to rg_task
+21:       %td= h rg_task.task_title
+22:       %td= h rg_task.provider
+23:       %td= h rg_task.schedule
+
+    app/views/rg_tasks/index.haml:43:in `compile!'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (55.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:17:25) [GET]
+  [4;35;1mRgTask Load (1.1ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:24:58) [GET]
+  [4;36;1mRgTask Load (1.2ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:25:07) [GET]
+  [4;35;1mRgTask Load (1.2ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:43:01) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:43:27) [GET]
+  [4;35;1mRgTask Load (1.1ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:43:57) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 11:44:07) [GET]
+  [4;35;1mRgTask Load (1.3ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]

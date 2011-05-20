@@ -1,6 +1,7 @@
 %h1 Cypher: Morpheus Schedule
 %table
   %tr
+    %th
     %th Task Title
     %th Provider
     %th Schedule
@@ -16,6 +17,7 @@
     //%th Incremental
   - @rg_tasks.each do |rg_task|
     %tr
+      %td= link_to 'Show Detail', rg_task
       %td= h rg_task.task_title
       %td= h rg_task.provider
       %td= h rg_task.schedule
@@ -29,7 +31,6 @@
       //%td= h rg_task.disable_validation
       //%td= h rg_task.update_if_exists
       //%td= h rg_task.incremental
-      %td= link_to 'Show', rg_task
       %td= link_to 'Edit', edit_rg_task_path(rg_task)
       %td= link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete 
       %td= link_to 'Run Now'
