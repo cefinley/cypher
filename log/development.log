@@ -2748,3 +2748,1923 @@ Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:42:15) [GET]
 Rendering template within layouts/rg_tasks
 Rendering rg_tasks/index
 Completed in 16ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:48:30) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 101ms (View: 96, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:48:32) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:49:39) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (Inconsistent indentation: "    \t\t" was used for indentation, but the rest of the document was indented using 2 spaces.) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:     =	navigation_list [
+8:     		{ :text => 'Dashboard', :url => { :controller => 'index' },
+9:     	], :id => 'main_nav'
+10:   %body
+11:     #container
+
+    app/views/layouts/rg_tasks.haml:8
+    haml (3.1.1) lib/haml/parser.rb:106:in `tabs'
+    haml (3.1.1) lib/haml/parser.rb:88:in `instance_eval'
+    haml (3.1.1) lib/haml/parser.rb:88:in `tabs'
+    haml (3.1.1) lib/haml/parser.rb:698:in `block_opened?'
+    haml (3.1.1) lib/haml/parser.rb:149:in `parse'
+    haml (3.1.1) lib/haml/engine.rb:124:in `initialize'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (64.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:49:57) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (Inconsistent indentation: "    \t\t" was used for indentation, but the rest of the document was indented using 2 spaces.) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:     =	navigation_list [
+8:     		{ :text => 'Dashboard', :url => { :controller => 'index' },
+9:     	]
+10:   %body
+11:     #container
+
+    app/views/layouts/rg_tasks.haml:8
+    haml (3.1.1) lib/haml/parser.rb:106:in `tabs'
+    haml (3.1.1) lib/haml/parser.rb:88:in `instance_eval'
+    haml (3.1.1) lib/haml/parser.rb:88:in `tabs'
+    haml (3.1.1) lib/haml/parser.rb:698:in `block_opened?'
+    haml (3.1.1) lib/haml/parser.rb:149:in `parse'
+    haml (3.1.1) lib/haml/engine.rb:124:in `initialize'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (146.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:50:22) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+ERROR: compiling _run_haml_app47views47layouts47rg_tasks46haml RAISED compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected ']', expecting '}'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:15: unknown regexp option - h
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:15: syntax error, unexpected tINTEGER, expecting ')'
+));}</h1>\n", 0, false);end
+        ^
+Function body:           def _run_haml_app47views47layouts47rg_tasks46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_attrs=>true, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :escape_html=>false, :format=>:xhtml, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns='http://www.w3.org/1999/xhtml'>\n  <head>\n    <title>#{_hamlout.adjust_tabs(3); 
+
+
+_hamlout.format_script_false_true_false_false_false_true_false((h(yield(:title) || "Untitled")
+));}</title>\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'application'
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( yield(:head)
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false((	navigation_list [{ :text => 'Dashboard', :url => { :controller => 'index' }]
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+
+ flash.each do |name, msg|
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( content_tag :div, msg, :id => "flash_#{name}"
+));}\n", 0, false);end
+ if show_title?
+_hamlout.push_text("      <h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h yield(:title)
+));}</h1>\n", 0, false);end
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( yield
+));}\n    </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:20:in `compile!'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:352:in `_render_with_layout'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/controllers/rg_tasks_controller.rb:7:in `index'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected ']', expecting '}'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:15: unknown regexp option - h
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:15: syntax error, unexpected tINTEGER, expecting ')'
+));}</h1>\n", 0, false);end
+        ^) on line #7 of app/views/layouts/rg_tasks.haml:
+4:     %title= h(yield(:title) || "Untitled")
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:     =	navigation_list [{ :text => 'Dashboard', :url => { :controller => 'index' }]
+8:   %body
+9:     #container
+10:       - flash.each do |name, msg|
+
+    app/views/layouts/rg_tasks.haml:20:in `compile!'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (133.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:50:28) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:50:57) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 09:50:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.4ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:52:08) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+ERROR: compiling _run_haml_app47views47layouts47rg_tasks46haml RAISED compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:4: syntax error, unexpected ':', expecting ')'
+...alse_false_true_false((Cypher: #{controller.action_name}
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: unknown regexp options - had
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                      ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                                    ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:17: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_haml_app47views47layouts47rg_tasks46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_attrs=>true, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :escape_html=>false, :format=>:xhtml, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns='http://www.w3.org/1999/xhtml'>\n  <head>\n    <title>#{_hamlout.adjust_tabs(3); 
+
+
+_hamlout.format_script_false_true_false_false_false_true_false((Cypher: #{controller.action_name}
+));}</title>\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'application'
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( yield(:head)
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+
+ flash.each do |name, msg|
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( content_tag :div, msg, :id => "flash_#{name}"
+));}\n", 0, false);end
+ if show_title?
+_hamlout.push_text("      <h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h yield(:title)
+));}</h1>\n", 0, false);end
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( yield
+));}\n    </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:17:in `compile!'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:352:in `_render_with_layout'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/controllers/rg_tasks_controller.rb:7:in `index'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:4: syntax error, unexpected ':', expecting ')'
+...alse_false_true_false((Cypher: #{controller.action_name}
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: unknown regexp options - had
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                      ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                                    ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:17: syntax error, unexpected kENSURE, expecting $end) on line #4 of app/views/layouts/rg_tasks.haml:
+1: !!! Strict
+2: %html{:xmlns => "http://www.w3.org/1999/xhtml"}
+3:   %head
+4:     %title= Cypher: #{controller.action_name}
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+
+    app/views/layouts/rg_tasks.haml:17:in `compile!'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (63.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:52:37) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+ERROR: compiling _run_haml_app47views47layouts47rg_tasks46haml RAISED compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:5: syntax error, unexpected ';', expecting ')'
+));}</title>\n    #{_hamlout.form...
+   ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: unknown regexp options - had
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                      ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                                    ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:11: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:14: syntax error, unexpected ')'
+));}</h1>\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - dv
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+));}\n    </div>\n  </body>\n</html>\n", -3, fa...
+                 ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - htl
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+...   </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;...
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unterminated string meets end of file
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $end, expecting '}'
+Function body:           def _run_haml_app47views47layouts47rg_tasks46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_attrs=>true, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :escape_html=>false, :format=>:xhtml, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns='http://www.w3.org/1999/xhtml'>\n  <head>\n    <title>#{_hamlout.adjust_tabs(3); 
+
+
+_hamlout.format_script_false_true_false_false_false_true_false((h(yield(:title) || "Cypher" #{controller.action_name})
+));}</title>\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'application'
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( yield(:head)
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+
+ flash.each do |name, msg|
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( content_tag :div, msg, :id => "flash_#{name}"
+));}\n", 0, false);end
+ if show_title?
+_hamlout.push_text("      <h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h yield(:title)
+));}</h1>\n", 0, false);end
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( yield
+));}\n    </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16:in `compile!'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:352:in `_render_with_layout'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/controllers/rg_tasks_controller.rb:7:in `index'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:5: syntax error, unexpected ';', expecting ')'
+));}</title>\n    #{_hamlout.form...
+   ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: unknown regexp options - had
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                      ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                                    ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:11: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:14: syntax error, unexpected ')'
+));}</h1>\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - dv
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+));}\n    </div>\n  </body>\n</html>\n", -3, fa...
+                 ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - htl
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+...   </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;...
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unterminated string meets end of file
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $end, expecting '}') on line #5 of app/views/layouts/rg_tasks.haml:
+2: %html{:xmlns => "http://www.w3.org/1999/xhtml"}
+3:   %head
+4:     %title= h(yield(:title) || "Cypher" #{controller.action_name})
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     #container
+
+    app/views/layouts/rg_tasks.haml:16:in `compile!'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (143.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:52:43) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+ERROR: compiling _run_haml_app47views47layouts47rg_tasks46haml RAISED compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:5: syntax error, unexpected ';', expecting ')'
+));}</title>\n    #{_hamlout.form...
+   ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: unknown regexp options - had
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                      ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                                    ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:11: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:14: syntax error, unexpected ')'
+));}</h1>\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - dv
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+));}\n    </div>\n  </body>\n</html>\n", -3, fa...
+                 ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - htl
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+...   </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;...
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unterminated string meets end of file
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $end, expecting '}'
+Function body:           def _run_haml_app47views47layouts47rg_tasks46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_attrs=>true, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :escape_html=>false, :format=>:xhtml, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns='http://www.w3.org/1999/xhtml'>\n  <head>\n    <title>#{_hamlout.adjust_tabs(3); 
+
+
+_hamlout.format_script_false_true_false_false_false_true_false((h(yield(:title) || "Cypher" #{controller.action_name})
+));}</title>\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'application'
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( yield(:head)
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+
+ flash.each do |name, msg|
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( content_tag :div, msg, :id => "flash_#{name}"
+));}\n", 0, false);end
+ if show_title?
+_hamlout.push_text("      <h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h yield(:title)
+));}</h1>\n", 0, false);end
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( yield
+));}\n    </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16:in `compile!'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:352:in `_render_with_layout'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/controllers/rg_tasks_controller.rb:7:in `index'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:5: syntax error, unexpected ';', expecting ')'
+));}</title>\n    #{_hamlout.form...
+   ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: unknown regexp options - had
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                      ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                                    ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:11: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:14: syntax error, unexpected ')'
+));}</h1>\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - dv
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+));}\n    </div>\n  </body>\n</html>\n", -3, fa...
+                 ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - htl
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+...   </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;...
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unterminated string meets end of file
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $end, expecting '}') on line #5 of app/views/layouts/rg_tasks.haml:
+2: %html{:xmlns => "http://www.w3.org/1999/xhtml"}
+3:   %head
+4:     %title= h(yield(:title) || "Cypher" #{controller.action_name})
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     #container
+
+    app/views/layouts/rg_tasks.haml:16:in `compile!'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (65.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:52:49) [GET]
+  [4;36;1mRgTask Load (0.9ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+ERROR: compiling _run_haml_app47views47layouts47rg_tasks46haml RAISED compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:5: syntax error, unexpected ';', expecting ')'
+));}</title>\n    #{_hamlout.form...
+   ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: unknown regexp options - had
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                      ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                                    ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:11: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:14: syntax error, unexpected ')'
+));}</h1>\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - dv
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+));}\n    </div>\n  </body>\n</html>\n", -3, fa...
+                 ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - htl
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+...   </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;...
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unterminated string meets end of file
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $end, expecting '}'
+Function body:           def _run_haml_app47views47layouts47rg_tasks46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_attrs=>true, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :escape_html=>false, :format=>:xhtml, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns='http://www.w3.org/1999/xhtml'>\n  <head>\n    <title>#{_hamlout.adjust_tabs(3); 
+
+
+_hamlout.format_script_false_true_false_false_false_true_false((h(yield(:title) || "Cypher" #{controller.action_name})
+));}</title>\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'application'
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( yield(:head)
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+
+ flash.each do |name, msg|
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( content_tag :div, msg, :id => "flash_#{name}"
+));}\n", 0, false);end
+ if show_title?
+_hamlout.push_text("      <h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h yield(:title)
+));}</h1>\n", 0, false);end
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( yield
+));}\n    </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16:in `compile!'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:352:in `_render_with_layout'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/controllers/rg_tasks_controller.rb:7:in `index'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:5: syntax error, unexpected ';', expecting ')'
+));}</title>\n    #{_hamlout.form...
+   ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: unknown regexp options - had
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                      ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:7: syntax error, unexpected $undefined
+));}\n  </head>\n  <body>\n    <div id='container'>\n", 1, false);
+                                                    ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:11: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:14: syntax error, unexpected ')'
+));}</h1>\n", 0, false);end
+ ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - dv
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+));}\n    </div>\n  </body>\n</html>\n", -3, fa...
+                 ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unknown regexp options - htl
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $undefined
+...   </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;...
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: unterminated string meets end of file
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:16: syntax error, unexpected $end, expecting '}') on line #5 of app/views/layouts/rg_tasks.haml:
+2: %html{:xmlns => "http://www.w3.org/1999/xhtml"}
+3:   %head
+4:     %title= h(yield(:title) || "Cypher" #{controller.action_name})
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     #container
+
+    app/views/layouts/rg_tasks.haml:16:in `compile!'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (60.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:52:54) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:55:38) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined local variable or method `cronhelp' for #<ActionView::Base:0x1033aff58>) on line #35 of app/views/rg_tasks/index.haml:
+32:       %td= link_to 'Show', rg_task
+33:       %td= link_to 'Edit', edit_rg_task_path(rg_task)
+34:       %td= link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete 
+35:       %td= link_to 'Run Now', cronhelp.html
+36: %br/
+37: = link_to 'New Cypher Task', new_rg_task_path
+38: = link_to 'Help Reading Cron Objects'
+
+    app/views/rg_tasks/index.haml:35:in `_run_haml_app47views47rg_tasks47index46haml'
+    app/views/rg_tasks/index.haml:17:in `each'
+    app/views/rg_tasks/index.haml:17:in `_run_haml_app47views47rg_tasks47index46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (62.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:55:55) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+ERROR: compiling _run_haml_app47views47rg_tasks47index46haml RAISED compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:36: unknown regexp options - td
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:36: unmatched ): /cronhelp.html
+));}</
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:36: syntax error, unexpected $undefined
+));}</td>\n  </tr>\n", -1, false);end
+          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: unknown regexp options - tabl
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: unmatched ): /tr>\n", -1, false);end
+_hamlout.push_text("</
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: syntax error, unexpected $undefined
+_hamlout.push_text("</table>\n<br />\n#{_hamlout.adjust_tab...
+                             ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+...out.push_text("</table>\n<br />\n#{_hamlout.adjust_tabs(-1);...
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: unterminated string meets end of file
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_haml_app47views47rg_tasks47index46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_attrs=>true, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :escape_html=>false, :format=>:xhtml, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Cypher: Morpheus Schedule</h1>\n<table>\n  <tr>\n    <th>Task Title</th>\n    <th>Provider</th>\n    <th>Schedule</th>\n    <!-- /%th Type -->\n    <!-- /%th Namespace -->\n    <!-- /%th Worker -->\n    <!-- /%th Operation -->\n    <!-- /%th Url -->\n    <!-- /%th Schema -->\n    <!-- /%th Skip Rehosting -->\n    <!-- /%th Disable Validation -->\n    <!-- /%th Update if exists -->\n    <!-- /%th Incremental -->\n  </tr>\n", 1, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @rg_tasks.each do |rg_task|
+_hamlout.push_text("  <tr>\n    <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_false_false_true_false((h rg_task.task_title
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h rg_task.provider
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h rg_task.schedule
+));}</td>\n    <!-- /%td= h rg_task.worktype -->\n    <!-- /%td= h rg_task.namespace -->\n    <!-- /%td= h rg_task.worker -->\n    <!-- /%td= h rg_task.operation -->\n    <!-- /%td= h rg_task.url -->\n    <!-- /%td= h rg_task.schema -->\n    <!-- /%td= h rg_task.skip_rehosting -->\n    <!-- /%td= h rg_task.disable_validation -->\n    <!-- /%td= h rg_task.update_if_exists -->\n    <!-- /%td= h rg_task.incremental -->\n    <td>#{_hamlout.adjust_tabs(1); 
+
+
+
+
+
+
+
+
+
+_hamlout.format_script_false_true_false_false_false_true_false((link_to 'Show', rg_task
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Edit', edit_rg_task_path(rg_task)
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Run Now', /cronhelp.html
+));}</td>\n  </tr>\n", -1, false);end
+_hamlout.push_text("</table>\n<br />\n#{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( link_to 'New Cypher Task', new_rg_task_path
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( link_to 'Help Reading Cron Objects'
+));}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37:in `compile!'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/controllers/rg_tasks_controller.rb:7:in `index'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:36: unknown regexp options - td
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:36: unmatched ): /cronhelp.html
+));}</
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:36: syntax error, unexpected $undefined
+));}</td>\n  </tr>\n", -1, false);end
+          ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: unknown regexp options - tabl
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: unmatched ): /tr>\n", -1, false);end
+_hamlout.push_text("</
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: syntax error, unexpected $undefined
+_hamlout.push_text("</table>\n<br />\n#{_hamlout.adjust_tab...
+                             ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+...out.push_text("</table>\n<br />\n#{_hamlout.adjust_tabs(-1);...
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: unterminated string meets end of file
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:37: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #36 of app/views/rg_tasks/index.haml:
+33:       %td= link_to 'Edit', edit_rg_task_path(rg_task)
+34:       %td= link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete 
+35:       %td= link_to 'Run Now', /cronhelp.html
+36: %br/
+37: = link_to 'New Cypher Task', new_rg_task_path
+38: = link_to 'Help Reading Cron Objects'
+
+    app/views/rg_tasks/index.haml:37:in `compile!'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (58.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:59:15) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+ERROR: compiling _run_haml_app47views47rg_tasks47index46haml RAISED compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:35: unknown type of %string
+..._false((link_to 'Run Now', %br/
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:35: syntax error, unexpected $end
+..._false((link_to 'Run Now', %br/
+                              ^
+Function body:           def _run_haml_app47views47rg_tasks47index46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_attrs=>true, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :escape_html=>false, :format=>:xhtml, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Cypher: Morpheus Schedule</h1>\n<table>\n  <tr>\n    <th>Task Title</th>\n    <th>Provider</th>\n    <th>Schedule</th>\n    <!-- /%th Type -->\n    <!-- /%th Namespace -->\n    <!-- /%th Worker -->\n    <!-- /%th Operation -->\n    <!-- /%th Url -->\n    <!-- /%th Schema -->\n    <!-- /%th Skip Rehosting -->\n    <!-- /%th Disable Validation -->\n    <!-- /%th Update if exists -->\n    <!-- /%th Incremental -->\n  </tr>\n", 1, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @rg_tasks.each do |rg_task|
+_hamlout.push_text("  <tr>\n    <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_false_false_true_false((h rg_task.task_title
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h rg_task.provider
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h rg_task.schedule
+));}</td>\n    <!-- /%td= h rg_task.worktype -->\n    <!-- /%td= h rg_task.namespace -->\n    <!-- /%td= h rg_task.worker -->\n    <!-- /%td= h rg_task.operation -->\n    <!-- /%td= h rg_task.url -->\n    <!-- /%td= h rg_task.schema -->\n    <!-- /%td= h rg_task.skip_rehosting -->\n    <!-- /%td= h rg_task.disable_validation -->\n    <!-- /%td= h rg_task.update_if_exists -->\n    <!-- /%td= h rg_task.incremental -->\n    <td>#{_hamlout.adjust_tabs(1); 
+
+
+
+
+
+
+
+
+
+_hamlout.format_script_false_true_false_false_false_true_false((link_to 'Show', rg_task
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Edit', edit_rg_task_path(rg_task)
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((link_to 'Run Now', %br/
+));}</td>\n  </tr>\n", -1, false);end
+_hamlout.push_text("</table>\n#{_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( link_to 'New Cypher Task', new_rg_task_path
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( link_to 'Help Reading Cron Objects'
+));}\n", 0, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:35:in `compile!'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/controllers/rg_tasks_controller.rb:7:in `index'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:35: unknown type of %string
+..._false((link_to 'Run Now', %br/
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/rg_tasks/index.haml:35: syntax error, unexpected $end
+..._false((link_to 'Run Now', %br/
+                              ^) on line #35 of app/views/rg_tasks/index.haml:
+32:       %td= link_to 'Show', rg_task
+33:       %td= link_to 'Edit', edit_rg_task_path(rg_task)
+34:       %td= link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete 
+35:       %td= link_to 'Run Now',
+36: %br/
+37: = link_to 'New Cypher Task', new_rg_task_path
+38: = link_to 'Help Reading Cron Objects'
+
+    app/views/rg_tasks/index.haml:35:in `compile!'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (133.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:59:25) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 30ms (View: 23, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 09:59:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRgTask Load (0.4ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 2) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/2]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:59:46) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#show (for 127.0.0.1 at 2011-05-20 09:59:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRgTask Load (0.4ms)[0m   [0;1mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/show
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1]
+
+
+Processing RgTasksController#edit (for 127.0.0.1 at 2011-05-20 09:59:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRgTask Load (0.4ms)[0m   [0mSELECT * FROM "rg_tasks" WHERE ("rg_tasks"."id" = 1) [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/edit
+Completed in 158ms (View: 150, DB: 0) | 200 OK [http://0.0.0.0/rg_tasks/1/edit]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 09:59:52) [GET]
+  [4;36;1mRgTask Load (0.9ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:02:07) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (Inconsistent indentation: "    \t\t" was used for indentation, but the rest of the document was indented using 2 spaces.) on line #9 of app/views/layouts/rg_tasks.haml:
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [
+9:     		{ :text => 'Dashboard', :url => { :controller => 'index' },
+10:     	], :id => 'main_nav'
+11:     #container
+12:       - flash.each do |name, msg|
+
+    app/views/layouts/rg_tasks.haml:9
+    haml (3.1.1) lib/haml/parser.rb:106:in `tabs'
+    haml (3.1.1) lib/haml/parser.rb:88:in `instance_eval'
+    haml (3.1.1) lib/haml/parser.rb:88:in `tabs'
+    haml (3.1.1) lib/haml/parser.rb:698:in `block_opened?'
+    haml (3.1.1) lib/haml/parser.rb:149:in `parse'
+    haml (3.1.1) lib/haml/engine.rb:124:in `initialize'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:34:in `new'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:34:in `compile'
+    haml (3.1.1) rails/./lib/haml/template/plugin.rb:39:in `call'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (69.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:02:26) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+ERROR: compiling _run_haml_app47views47layouts47rg_tasks46haml RAISED compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:8: syntax error, unexpected ']', expecting '}'
+...> { :controller => 'index' },], :id => 'main_nav'
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:10: syntax error, unexpected kDO_BLOCK, expecting kEND
+ flash.each do |name, msg|
+              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:10: syntax error, unexpected '|', expecting '='
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:18: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_haml_app47views47layouts47rg_tasks46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_attrs=>true, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :escape_html=>false, :format=>:xhtml, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns='http://www.w3.org/1999/xhtml'>\n  <head>\n    <title>#{_hamlout.adjust_tabs(3); 
+
+
+_hamlout.format_script_false_true_false_false_false_true_false((h(yield(:title) || "Cypher" )
+));}</title>\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( stylesheet_link_tag 'application'
+));}\n    #{_hamlout.format_script_false_false_false_false_false_true_false(( yield(:head)
+));}\n  </head>\n  <body>\n    #{
+_hamlout.format_script_false_false_false_false_false_true_false(( navigation_list [{ :text => 'Dashboard', :url => { :controller => 'index' },], :id => 'main_nav'
+));}\n    <div id='container'>\n", 1, false);
+ flash.each do |name, msg|
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( content_tag :div, msg, :id => "flash_#{name}"
+));}\n", 0, false);end
+ if show_title?
+_hamlout.push_text("      <h1>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_false_false_true_false((h yield(:title)
+));}</h1>\n", 0, false);end
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_false_false_true_false(( yield
+));}\n    </div>\n  </body>\n</html>\n", -3, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:18:in `compile!'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:352:in `_render_with_layout'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/haml-3.1.1/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/controllers/rg_tasks_controller.rb:7:in `index'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/coreyfinley/.rvm/gems/ruby-1.8.7-p302/gems/rails-2.3.11/lib/commands/server.rb:111
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `gem_original_require'
+/Users/coreyfinley/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:36:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:8: syntax error, unexpected ']', expecting '}'
+...> { :controller => 'index' },], :id => 'main_nav'
+                              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:10: syntax error, unexpected kDO_BLOCK, expecting kEND
+ flash.each do |name, msg|
+              ^
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:10: syntax error, unexpected '|', expecting '='
+/Users/coreyfinley/morpheus_scheduler_crud/cypher/app/views/layouts/rg_tasks.haml:18: syntax error, unexpected kENSURE, expecting $end) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'index' },], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/views/layouts/rg_tasks.haml:18:in `compile!'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (61.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:03:47) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `rubify' for "Dashboard":String) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'index' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:16:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (63.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:05:14) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `rubify' for "Dashboard":String) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:16:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (139.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:06:10) [GET]
+  [4;35;1mRgTask Load (0.9ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `rubify' for "Dashboard":String) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:16:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (152.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:06:27) [GET]
+  [4;36;1mRgTask Load (1.0ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `rubify' for "Dashboard":String) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:20:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (65.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:06:45) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `rubify' for "Dashboard":String) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:16:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (68.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:06:48) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `rubify' for "Dashboard":String) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:16:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (142.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:07:26) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `current_section?' for #<RgTasksController:0x1036acd50>) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:18:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (63.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:08:35) [GET]
+  [4;36;1mRgTask Load (0.9ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `current_section?' for #<RgTasksController:0x10378b668>) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:18:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:08:44) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `current_section' for #<RgTasksController:0x1033d0168>) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:18:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (61.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:08:53) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `current_section?' for #<RgTasksController:0x10348fdb0>) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:18:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (70.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:12:27) [GET]
+  [4;35;1mRgTask Load (0.8ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+
+ActionView::TemplateError (undefined method `current_section?' for #<RgTasksController:0x103560de8>) on line #8 of app/views/layouts/rg_tasks.haml:
+5:     = stylesheet_link_tag 'application'
+6:     = yield(:head)
+7:   %body
+8:     = navigation_list [{ :text => 'Dashboard', :url => { :controller => 'dashboard' }}], :id => 'main_nav'
+9:     #container
+10:       - flash.each do |name, msg|
+11:         = content_tag :div, msg, :id => "flash_#{name}"
+
+    app/helpers/application_helper.rb:18:in `current_section'
+    app/helpers/application_helper.rb:7:in `navigation_list'
+    app/helpers/application_helper.rb:5:in `each'
+    app/helpers/application_helper.rb:5:in `navigation_list'
+    app/views/layouts/rg_tasks.haml:8:in `_run_haml_app47views47layouts47rg_tasks46haml'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.1.1) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/rg_tasks_controller.rb:7:in `index'
+
+Rendered rescues/_trace (134.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:12:54) [GET]
+  [4;36;1mRgTask Load (0.8ms)[0m   [0;1mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]
+
+
+Processing RgTasksController#index (for 127.0.0.1 at 2011-05-20 10:13:02) [GET]
+  [4;35;1mRgTask Load (1.0ms)[0m   [0mSELECT * FROM "rg_tasks" [0m
+Rendering template within layouts/rg_tasks
+Rendering rg_tasks/index
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/rg_tasks]

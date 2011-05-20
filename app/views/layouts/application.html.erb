@@ -5,6 +5,9 @@
     <title><%= h(yield(:title) || "Untitled") %></title>
     <%= stylesheet_link_tag 'application' %>
     <%= yield(:head) %>
+    <%=	navigation_list [
+    		{ :text => 'Dashboard', :url => { :controller => 'index' },
+    	], :id => 'main_nav' %>
   </head>
   <body>
     <div id="container">
