@@ -2,8 +2,9 @@ class RgTasksController < ApplicationController
   # GET /rg_tasks
   # GET /rg_tasks.xml
   def index
-    @rg_tasks = RgTask.all
-
+    #@rg_tasks = RgTask.all
+    @rg_tasks = RgTask.paginate(:per_page => 10, :page => params[:page])
+    
     respond_to do |format|
       format.html # index.html.haml
       format.xml  { render :xml => @rg_tasks }
