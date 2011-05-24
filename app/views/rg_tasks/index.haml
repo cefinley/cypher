@@ -1,8 +1,15 @@
 //- javascript "pagination"  Working on Ajax pagination
-%h1 Cypher: Morpheus Schedule
-#products
-  = render :partial => 'rgtasks'
+.inner-container.clearfix
+  .boxin
+    .box.box-100
+      .boxin
+        .header
+          %h3 Scheduled Tasks
+          %a.button{:href => "/rg_tasks/new"} create&nbsp;»
+        .content
+          #products
+            = render :partial => 'rgtasks'
 
 %br/
-= link_to 'New Cypher Task', new_rg_task_path
-= link_to 'Help Reading Cron'
+/= link_to 'New Cypher Task', new_rg_task_path
+= link_to 'Help Reading Cron', "/cronhelp.html"

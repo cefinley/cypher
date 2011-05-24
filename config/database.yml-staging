@@ -1,0 +1,18 @@
+staging:
+  adapter: mysql
+  encoding: utf8
+  # Internal IP for MySQL - Staging
+  host: 10.194.174.239
+  username: DB_USERNAME
+  password: DB_PASSWORD
+  # FIXME Change the name of this database to realgravity_staging
+  database: realgravity_staging
+
+realgravity_datawarehouse:
+  encoding: utf8
+  adapter: mysql
+  # Private IP for MySQL Prod Master
+  host: 10.80.83.49
+  username: DB_USERNAME
+  password: DB_PASSWORD
+  database: realgravity_datawarehouse

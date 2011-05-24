@@ -1,0 +1,17 @@
+production:
+  adapter: mysql
+  encoding: utf8
+  # Private IP for MySQL Prod Master
+  host: 10.80.83.49
+  username: DB_USERNAME
+  password: DB_PASSWORD
+  database: realgravity_production
+
+realgravity_datawarehouse:
+  adapter: mysql
+  encoding: utf8
+  # Private IP for MySQL Prod Master
+  host: 10.80.83.49
+  username: DB_USERNAME
+  password: DB_PASSWORD
+  database: realgravity_datawarehouse

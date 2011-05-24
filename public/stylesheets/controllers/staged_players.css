@@ -1,0 +1,29 @@
+/* line 2, ../../../app/stylesheets/controllers/staged_players.scss */
+div#staged_player {
+  margin: 10px 50px;
+}
+/* line 5, ../../../app/stylesheets/controllers/staged_players.scss */
+div#staged_player h2 {
+  color: #0F508D;
+  font-size: 1.8em;
+  margin-bottom: 50px;
+  margin-left: 70px;
+}
+/* line 12, ../../../app/stylesheets/controllers/staged_players.scss */
+div#staged_player h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #333;
+}
+/* line 18, ../../../app/stylesheets/controllers/staged_players.scss */
+div#staged_player div#player {
+  padding: 0 50px;
+  text-align: center;
+  float: left;
+}
+/* line 24, ../../../app/stylesheets/controllers/staged_players.scss */
+div#staged_player div#companion_ad {
+  padding: 0 50px;
+  text-align: center;
+  float: left;
+}

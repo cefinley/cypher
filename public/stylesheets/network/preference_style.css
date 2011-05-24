@@ -1,0 +1,70 @@
+/* line 1, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list, #network-droppable-list {
+  font-size: 50%;
+  width: 100%;
+  margin: 0px;
+  min-height: 400px;
+}
+/* line 6, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container, #droppable-list #list-container, #droppable-list #network-selected-container, #droppable-list #network-list-container, #network-droppable-list #selected-container, #network-droppable-list #list-container, #network-droppable-list #network-selected-container, #network-droppable-list #network-list-container {
+  margin: 20px 40px;
+  width: 300px;
+  min-height: 150px;
+  float: left;
+  border: 1px solid #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 15, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container h1, #droppable-list #list-container h1, #droppable-list #network-selected-container h1, #droppable-list #network-list-container h1, #network-droppable-list #selected-container h1, #network-droppable-list #list-container h1, #network-droppable-list #network-selected-container h1, #network-droppable-list #network-list-container h1 {
+  float: none;
+  padding: 10px;
+  vertical-align: top;
+  width: 280px;
+  text-align: center;
+}
+/* line 22, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container #items_selected, #droppable-list #selected-container #items_to_select, #droppable-list #selected-container #network-items-selected, #droppable-list #selected-container #network-items_to_select, #droppable-list #list-container #items_selected, #droppable-list #list-container #items_to_select, #droppable-list #list-container #network-items-selected, #droppable-list #list-container #network-items_to_select, #droppable-list #network-selected-container #items_selected, #droppable-list #network-selected-container #items_to_select, #droppable-list #network-selected-container #network-items-selected, #droppable-list #network-selected-container #network-items_to_select, #droppable-list #network-list-container #items_selected, #droppable-list #network-list-container #items_to_select, #droppable-list #network-list-container #network-items-selected, #droppable-list #network-list-container #network-items_to_select, #network-droppable-list #selected-container #items_selected, #network-droppable-list #selected-container #items_to_select, #network-droppable-list #selected-container #network-items-selected, #network-droppable-list #selected-container #network-items_to_select, #network-droppable-list #list-container #items_selected, #network-droppable-list #list-container #items_to_select, #network-droppable-list #list-container #network-items-selected, #network-droppable-list #list-container #network-items_to_select, #network-droppable-list #network-selected-container #items_selected, #network-droppable-list #network-selected-container #items_to_select, #network-droppable-list #network-selected-container #network-items-selected, #network-droppable-list #network-selected-container #network-items_to_select, #network-droppable-list #network-list-container #items_selected, #network-droppable-list #network-list-container #items_to_select, #network-droppable-list #network-list-container #network-items-selected, #network-droppable-list #network-list-container #network-items_to_select {
+  height: 300px;
+  margin-left: 5px;
+  width: 96%;
+  overflow: scroll;
+  padding: 5px;
+}
+/* line 28, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container #items_selected li, #droppable-list #selected-container #items_to_select li, #droppable-list #selected-container #network-items-selected li, #droppable-list #selected-container #network-items_to_select li, #droppable-list #list-container #items_selected li, #droppable-list #list-container #items_to_select li, #droppable-list #list-container #network-items-selected li, #droppable-list #list-container #network-items_to_select li, #droppable-list #network-selected-container #items_selected li, #droppable-list #network-selected-container #items_to_select li, #droppable-list #network-selected-container #network-items-selected li, #droppable-list #network-selected-container #network-items_to_select li, #droppable-list #network-list-container #items_selected li, #droppable-list #network-list-container #items_to_select li, #droppable-list #network-list-container #network-items-selected li, #droppable-list #network-list-container #network-items_to_select li, #network-droppable-list #selected-container #items_selected li, #network-droppable-list #selected-container #items_to_select li, #network-droppable-list #selected-container #network-items-selected li, #network-droppable-list #selected-container #network-items_to_select li, #network-droppable-list #list-container #items_selected li, #network-droppable-list #list-container #items_to_select li, #network-droppable-list #list-container #network-items-selected li, #network-droppable-list #list-container #network-items_to_select li, #network-droppable-list #network-selected-container #items_selected li, #network-droppable-list #network-selected-container #items_to_select li, #network-droppable-list #network-selected-container #network-items-selected li, #network-droppable-list #network-selected-container #network-items_to_select li, #network-droppable-list #network-list-container #items_selected li, #network-droppable-list #network-list-container #items_to_select li, #network-droppable-list #network-list-container #network-items-selected li, #network-droppable-list #network-list-container #network-items_to_select li {
+  padding: 2px;
+}
+/* line 31, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container #items_selected li.placeholder, #droppable-list #selected-container #items_to_select li.placeholder, #droppable-list #selected-container #network-items-selected li.placeholder, #droppable-list #selected-container #network-items_to_select li.placeholder, #droppable-list #list-container #items_selected li.placeholder, #droppable-list #list-container #items_to_select li.placeholder, #droppable-list #list-container #network-items-selected li.placeholder, #droppable-list #list-container #network-items_to_select li.placeholder, #droppable-list #network-selected-container #items_selected li.placeholder, #droppable-list #network-selected-container #items_to_select li.placeholder, #droppable-list #network-selected-container #network-items-selected li.placeholder, #droppable-list #network-selected-container #network-items_to_select li.placeholder, #droppable-list #network-list-container #items_selected li.placeholder, #droppable-list #network-list-container #items_to_select li.placeholder, #droppable-list #network-list-container #network-items-selected li.placeholder, #droppable-list #network-list-container #network-items_to_select li.placeholder, #network-droppable-list #selected-container #items_selected li.placeholder, #network-droppable-list #selected-container #items_to_select li.placeholder, #network-droppable-list #selected-container #network-items-selected li.placeholder, #network-droppable-list #selected-container #network-items_to_select li.placeholder, #network-droppable-list #list-container #items_selected li.placeholder, #network-droppable-list #list-container #items_to_select li.placeholder, #network-droppable-list #list-container #network-items-selected li.placeholder, #network-droppable-list #list-container #network-items_to_select li.placeholder, #network-droppable-list #network-selected-container #items_selected li.placeholder, #network-droppable-list #network-selected-container #items_to_select li.placeholder, #network-droppable-list #network-selected-container #network-items-selected li.placeholder, #network-droppable-list #network-selected-container #network-items_to_select li.placeholder, #network-droppable-list #network-list-container #items_selected li.placeholder, #network-droppable-list #network-list-container #items_to_select li.placeholder, #network-droppable-list #network-list-container #network-items-selected li.placeholder, #network-droppable-list #network-list-container #network-items_to_select li.placeholder {
+  display: none;
+}
+/* line 33, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container .format-select-list, #droppable-list #list-container .format-select-list, #droppable-list #network-selected-container .format-select-list, #droppable-list #network-list-container .format-select-list, #network-droppable-list #selected-container .format-select-list, #network-droppable-list #list-container .format-select-list, #network-droppable-list #network-selected-container .format-select-list, #network-droppable-list #network-list-container .format-select-list {
+  border: none;
+}
+/* line 35, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container .format-select-list:hover, #droppable-list #selected-container .format-select-list:focus, #droppable-list #selected-container .format-select-list:active, #droppable-list #list-container .format-select-list:hover, #droppable-list #list-container .format-select-list:focus, #droppable-list #list-container .format-select-list:active, #droppable-list #network-selected-container .format-select-list:hover, #droppable-list #network-selected-container .format-select-list:focus, #droppable-list #network-selected-container .format-select-list:active, #droppable-list #network-list-container .format-select-list:hover, #droppable-list #network-list-container .format-select-list:focus, #droppable-list #network-list-container .format-select-list:active, #network-droppable-list #selected-container .format-select-list:hover, #network-droppable-list #selected-container .format-select-list:focus, #network-droppable-list #selected-container .format-select-list:active, #network-droppable-list #list-container .format-select-list:hover, #network-droppable-list #list-container .format-select-list:focus, #network-droppable-list #list-container .format-select-list:active, #network-droppable-list #network-selected-container .format-select-list:hover, #network-droppable-list #network-selected-container .format-select-list:focus, #network-droppable-list #network-selected-container .format-select-list:active, #network-droppable-list #network-list-container .format-select-list:hover, #network-droppable-list #network-list-container .format-select-list:focus, #network-droppable-list #network-list-container .format-select-list:active {
+  border-color: #272727;
+  background: #999;
+  color: #fff;
+}
+/* line 42, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container .format-select-list .select-list-content .select-list-id, #droppable-list #list-container .format-select-list .select-list-content .select-list-id, #droppable-list #network-selected-container .format-select-list .select-list-content .select-list-id, #droppable-list #network-list-container .format-select-list .select-list-content .select-list-id, #network-droppable-list #selected-container .format-select-list .select-list-content .select-list-id, #network-droppable-list #list-container .format-select-list .select-list-content .select-list-id, #network-droppable-list #network-selected-container .format-select-list .select-list-content .select-list-id, #network-droppable-list #network-list-container .format-select-list .select-list-content .select-list-id {
+  display: none;
+}
+/* line 43, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container .format-select-list .select-list-content .select-list-name, #droppable-list #list-container .format-select-list .select-list-content .select-list-name, #droppable-list #network-selected-container .format-select-list .select-list-content .select-list-name, #droppable-list #network-list-container .format-select-list .select-list-content .select-list-name, #network-droppable-list #selected-container .format-select-list .select-list-content .select-list-name, #network-droppable-list #list-container .format-select-list .select-list-content .select-list-name, #network-droppable-list #network-selected-container .format-select-list .select-list-content .select-list-name, #network-droppable-list #network-list-container .format-select-list .select-list-content .select-list-name {
+  width: 70%;
+}
+/* line 46, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #selected-container .format-select-list .select-list-content a, #droppable-list #list-container .format-select-list .select-list-content a, #droppable-list #network-selected-container .format-select-list .select-list-content a, #droppable-list #network-list-container .format-select-list .select-list-content a, #network-droppable-list #selected-container .format-select-list .select-list-content a, #network-droppable-list #list-container .format-select-list .select-list-content a, #network-droppable-list #network-selected-container .format-select-list .select-list-content a, #network-droppable-list #network-list-container .format-select-list .select-list-content a {
+  margin-left: 245px;
+  margin-top: -20px;
+  border-bottom: none;
+}
+/* line 54, ../../../app/stylesheets/network/preference_style.scss */
+#droppable-list #list-container, #droppable-list #network-list-container, #network-droppable-list #list-container, #network-droppable-list #network-list-container {
+  margin-left: 125px;
+}

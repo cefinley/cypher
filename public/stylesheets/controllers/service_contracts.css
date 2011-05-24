@@ -1,0 +1,30 @@
+/*
+form.formtastic fieldset ol div {
+  clear:both;
+  padding-left: 100px;
+}
+
+form.formtastic fieldset ol div span.first {
+  padding-left: 40px;  
+}
+form.formtastic fieldset ol div span.last {
+  padding-left: 10px;  
+}
+
+form.formtastic fieldset ol div p {
+  display:inline-block;
+  padding-left: 40px;  
+}
+
+form.formtastic fieldset ol li.horiz {
+  width:60px;
+  display:inline-block;
+  padding-left: 40px;  
+}
+
+form.formtastic fieldset ol li.unlimited {
+  width:60px;
+  display:inline-block;
+  padding-left: 50px;  
+}
+*/

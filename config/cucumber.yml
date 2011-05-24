@@ -1,0 +1,26 @@
+<%
+rerun = File.file?('rerun.txt') ? IO.read('rerun.txt') : ""
+rerun_opts = rerun.to_s.strip.empty? ? "--format progress features" : "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} #{rerun}"
+std_opts = "#{rerun_opts} --format rerun --out rerun.txt --strict --tags ~@wip"
+%>
+default: <%= std_opts %>
+wip: --tags @wip:3 --wip features
+# just the features for a user with the role of sales, must have @sales tag
+# Quit after 3 errors
+# make output pretty
+sales: --tags @sales:3 -f pretty
+site_admin: --tags @site_admin:3 -f pretty
+login: --tags @login -f pretty
+roles: --tags @roles -f pretty
+prefs: --tags @preference -f pretty
+players: --tags @players -f pretty
+nowip: --tags ~@wip
+debug: --tags @debug -f pretty
+geo_blocking: --tags @geo_blocking -f pretty
+smoke: --tags @smoke_test -f pretty
+network: --tags @network -f pretty
+upload: --tags @upload -f pretty
+blacklist: --tags @blacklist -f pretty
+syndication: --tags @syndication -f pretty
+network_playlist: --tags @network_playlist -f pretty
+ad_default: --tags @ad_default -f pretty

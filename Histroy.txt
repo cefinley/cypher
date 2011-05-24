@@ -12,8 +12,16 @@
 
 === 1.0.0 / 2011-5-20
 
-* 2 major enhancements
+* 3 major enhancements
   
   * Working local prototype of site
   * Generated more attractive CSS stylesheet
   * Added Task Title field to all aspects
+
+=== 1.1.0 / 2011-5-23
+
+* 3 major enhancements
+
+  * Added pagination to index page
+  * Added exception throws to new and edit page
+  * Adding Bundler

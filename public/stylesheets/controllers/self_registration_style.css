@@ -1,0 +1,31 @@
+/* line 2, ../../../app/stylesheets/controllers/self_registration_style.scss */
+form.formtastic fieldset.inputs ol .in-line li {
+  display: inline;
+}
+
+/* line 6, ../../../app/stylesheets/controllers/self_registration_style.scss */
+.registration_modal_form .ui-dialog-buttonpane {
+  text-align: right;
+}
+
+/* line 10, ../../../app/stylesheets/controllers/self_registration_style.scss */
+.legal {
+  text-align: left;
+  font-weight: normal;
+}
+/* line 13, ../../../app/stylesheets/controllers/self_registration_style.scss */
+.legal h1 {
+  float: left;
+  padding: 3px 0 0 40px;
+  vertical-align: top;
+  font-size: 125%;
+  font-weight: bold;
+}
+/* line 20, ../../../app/stylesheets/controllers/self_registration_style.scss */
+.legal h2 {
+  font-size: 90%;
+}
+/* line 23, ../../../app/stylesheets/controllers/self_registration_style.scss */
+.legal p {
+  margin-top: 15px;
+}

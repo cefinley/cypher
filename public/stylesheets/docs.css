@@ -1,0 +1,119 @@
+/* line 4, ../../app/stylesheets/docs.scss */
+html {
+  background: #444;
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+
+/* line 10, ../../app/stylesheets/docs.scss */
+body {
+  width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #333;
+}
+
+/* line 16, ../../app/stylesheets/docs.scss */
+h1 {
+  font-size: 150%;
+  margin: 0;
+}
+
+/* line 20, ../../app/stylesheets/docs.scss */
+ul {
+  list-style: none;
+}
+
+/* line 23, ../../app/stylesheets/docs.scss */
+a {
+  text-decoration: none;
+  color: #FF99A8;
+}
+
+/* line 41, ../../app/stylesheets/docs.scss */
+.options ul,
+.signatures ul,
+.methods ul {
+  margin: 0 10px;
+  padding: 0;
+  background: #ddd;
+  color: #333;
+}
+/* line 44, ../../app/stylesheets/docs.scss */
+.options ul a,
+.signatures ul a,
+.methods ul a {
+  color: #95192b;
+}
+/* line 47, ../../app/stylesheets/docs.scss */
+.options ul li,
+.signatures ul li,
+.methods ul li {
+  margin: 0;
+  padding: 5px 15px;
+}
+/* line 50, ../../app/stylesheets/docs.scss */
+.options ul h4,
+.signatures ul h4,
+.methods ul h4 {
+  font-size: 120%;
+  margin: 0 0 4px 0;
+  padding: 7px 10px;
+  border-bottom: 1px solid #666;
+}
+/* line 56, ../../app/stylesheets/docs.scss */
+.options ul span.type,
+.signatures ul span.type,
+.methods ul span.type {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 61, ../../app/stylesheets/docs.scss */
+.option .received-args {
+  display: none !important;
+}
+
+/* line 64, ../../app/stylesheets/docs.scss */
+.option.type-function .received-args {
+  display: block;
+}
+
+/* line 68, ../../app/stylesheets/docs.scss */
+ul.signatures .returns {
+  border: 1px dotted #666;
+  padding: 2px 5px;
+}
+
+/* line 73, ../../app/stylesheets/docs.scss */
+.default-value {
+  font-style: italic;
+}
+
+/* line 77, ../../app/stylesheets/docs.scss */
+h2 {
+  font-size: 125%;
+  margin: 10px 0 5px;
+}
+
+/* line 82, ../../app/stylesheets/docs.scss */
+h3 {
+  font-size: 110%;
+  margin: 0 10px;
+}
+
+/* line 87, ../../app/stylesheets/docs.scss */
+textarea {
+  margin: 0 10px;
+  padding: 0;
+  background: #ddd;
+  color: #333;
+  width: 630px;
+  height: 350px;
+  margin: 2px 10px 12px;
+  padding: 2px 10px;
+  overflow-x: auto;
+  color: #224;
+  font-family: monospace;
+}

@@ -1,0 +1,448 @@
+/* Multiselect
+----------------------------------*/
+/* line 3, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+.externalControlsWrapper {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* line 4, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+.externalControls a {
+  font-size: 90%;
+}
+
+/* line 5, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+.externalControls {
+  margin-top: 10px;
+  border: 1px solid #bbb;
+  background: #eee;
+  height: 230px;
+}
+
+/* line 6, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+.externalControls .optionWrapper {
+  vertical-align: middle;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  float: left;
+  clear: left;
+}
+
+/* line 7, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+.externalControls .optionLabel {
+  width: 200px;
+  padding-bottom: 5px;
+}
+
+/* line 8, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+.externalControls .optionInput {
+  float: right;
+  width: 220px;
+}
+
+/* line 9, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+.externalControls .optionInput .text {
+  font-size: 14px;
+  width: 150px;
+}
+
+/* line 10, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+.externalControls .optionInput .button {
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 12, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+h2.top-header {
+  color: #FFFFFF;
+  margin: 0 0 20px 0 !important;
+  padding: 5px 10px !important;
+  background: #0F67A1;
+  font-size: 15px;
+  -moz-border-radius: 2px;
+  text-transform: none;
+}
+
+/* line 14, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list a,
+ul.methods-list a {
+  font-size: 14px;
+  color: #0f67a1;
+  text-decoration: underline;
+}
+
+/* line 20, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list a:hover,
+ul.methods-list a:hover {
+  color: #176092;
+  text-decoration: underline;
+}
+
+/* line 29, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+.UIAPIPlugin #options h2,
+.UIAPIPlugin #events h2,
+.UIAPIPlugin #methods h2,
+.UIAPIPlugin #theming h2 {
+  color: #FFFFFF;
+  margin: 0 0 20px 0 !important;
+  padding: 5px 10px !important;
+  background: #0F67A1;
+  font-size: 15px;
+  -moz-border-radius: 2px;
+  text-transform: none;
+}
+
+/* line 32, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list,
+ul.options-list li.option {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/* line 33, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list {
+  margin: 0 0 20px 6px;
+}
+
+/* line 34, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option {
+  padding-bottom: 10px !important;
+}
+
+/* line 37, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option dl,
+ul.options-list li.option dt,
+ul.options-list li.option dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 38, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-header {
+  width: 100%;
+  float: left;
+  background-color: #E2EDF4 !important;
+}
+
+/* line 39, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-header .option-name {
+  line-height: 0.2;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 35%;
+  float: left;
+  background-color: #E2EDF4 !important;
+}
+
+/* line 40, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-header .option-name a {
+  vertical-align: 90%;
+  font-size: 16px;
+  margin: 10px 0 0px 10px;
+}
+
+/* line 42, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-header dt,
+ul.options-list li.option .option-header dd {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 18%;
+}
+
+/* line 43, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-header dt.option-type-label {
+  display: none;
+}
+
+/* line 44, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-header dt.option-default-label {
+  text-align: right;
+  padding-right: 0.4em;
+  color: #666666;
+}
+
+/* line 45, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-description {
+  clear: left;
+  padding: 5px 10px 0 10px;
+}
+
+/* line 46, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-examples-list dt p {
+  line-height: 1.5 !important;
+  margin: 0 !important;
+  padding: 5px 0 !important;
+  color: #666666;
+}
+
+/* line 47, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-examples-list dd pre {
+  margin: 0 !important;
+}
+
+/* line 48, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-examples-list {
+  padding: 0 10px;
+}
+
+/* line 49, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-examples-list dd {
+  margin-left: 10px;
+}
+
+/* line 50, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.options-list li.option .option-examples-list dd pre code {
+  background: none;
+}
+
+/* line 53, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list,
+ul.events-list li.event {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/* line 54, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list {
+  margin: 0px 0px 20px 6px;
+}
+
+/* line 55, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event {
+  padding-bottom: 10px !important;
+}
+
+/* line 58, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event dl,
+ul.events-list li.event dt,
+ul.events-list li.event dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 59, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-header {
+  width: 100%;
+  float: left;
+  background-color: #E2EDF4 !important;
+}
+
+/* line 60, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-header .event-name {
+  line-height: 0.2;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 35%;
+  float: left;
+  background-color: #E2EDF4 !important;
+}
+
+/* line 61, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-header .event-name a {
+  vertical-align: 90%;
+  font-size: 16px;
+  margin: 10px 0 0px 10px;
+}
+
+/* line 63, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-header dt,
+ul.events-list li.event .event-header dd {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 23%;
+}
+
+/* line 64, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-header dt.event-type-label {
+  width: 10%;
+}
+
+/* line 65, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-header dt.event-default-label {
+  text-align: right;
+  padding-right: 0.5em;
+  color: #666666;
+}
+
+/* line 66, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-description {
+  clear: left;
+  padding: 5px 10px 0 10px;
+}
+
+/* line 67, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-examples-list dt p {
+  line-height: 1.5 !important;
+  margin: 0 !important;
+  padding: 5px 0 !important;
+  color: #666666;
+}
+
+/* line 68, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-examples-list dd pre {
+  margin: 0 !important;
+}
+
+/* line 69, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-examples-list {
+  padding: 0 10px;
+}
+
+/* line 70, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-examples-list dd {
+  margin-left: 10px;
+}
+
+/* line 71, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+ul.events-list li.event .event-examples-list dd pre code {
+  background: none;
+}
+
+/* Multiselect
+----------------------------------*/
+/* line 76, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect {
+  border: 1px solid;
+  font-size: 0.8em;
+}
+/* line 77, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect ul {
+  -moz-user-select: none;
+}
+/* line 78, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect div.list-container {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  float: left;
+}
+/* line 79, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect ul.list {
+  position: relative;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+/* line 80, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect li {
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  line-height: 20px;
+  height: 20px;
+  font-size: 11px;
+  list-style: none;
+  padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 81, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect li a {
+  color: #999;
+  text-decoration: none;
+  padding: 0;
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+/* line 82, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect ul.ui-state-highlight {
+  border: none;
+}
+/* line 83, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect li.ui-draggable-dragging {
+  border: 1px solid;
+  padding-left: 10px;
+  z-index: 99999;
+}
+/* line 89, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect div.available {
+  border-left: 1px solid;
+}
+/* line 93, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect .ui-state-default {
+  border: none;
+  margin-bottom: 1px;
+  position: relative;
+}
+/* line 94, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect .ui-state-hover {
+  border: none;
+}
+/* line 95, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect .ui-widget-header {
+  border: none;
+  margin-bottom: 1px;
+}
+/* line 97, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect .add-all {
+  float: right;
+  padding: 7px;
+  white-space: nowrap;
+}
+/* line 98, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect .remove-all {
+  float: right;
+  padding: 7px;
+  white-space: nowrap;
+}
+/* line 99, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect .count {
+  cursor: default;
+  float: left;
+  padding: 7px;
+}
+/* line 100, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect .search {
+  float: left;
+  padding: 1px;
+  opacity: 0.7;
+  margin: 4px;
+  height: 14px;
+}
+/* line 101, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect .busy {
+  left: 0px;
+  float: left;
+  padding: 7px 7px 7px 25px;
+  z-index: 1;
+  background: url(/images/ui.multiselect/loading.gif) 4px 50% no-repeat;
+}
+/* line 102, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect .overlay {
+  background: #aaaaaa;
+  opacity: .30;
+  filter: Alpha(Opacity=30);
+}
+/* line 104, ../../../app/stylesheets/ui_elements/_multi-select.scss */
+form.formtastic fieldset.inputs ol .ui-multiselect li a.action {
+  position: absolute;
+  border: none;
+  right: 0px;
+  top: 1px;
+  padding-right: 2px;
+}
+
+/* line 3, ../../../app/stylesheets/controllers/preference_style.scss */
+.multiselect-margin {
+  margin-top: 15px;
+  margin-left: 10.5em;
+}
+
+/* line 8, ../../../app/stylesheets/controllers/preference_style.scss */
+.multiselect {
+  width: 461px;
+  height: 201px;
+}

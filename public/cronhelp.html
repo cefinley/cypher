@@ -1,13 +1,41 @@
 <html>
-<h1>How to read Cron object from the schedule field</h1>
-<body>
-  *    *    *    *    *  command to be executed<br>
-  -    -    -    -    -<br>
-  |    |    |    |    |<br>
-  |    |    |    |    |<br>
-  |    |    |    |    +----- day of week (0 - 7) (Sunday=0 or 7)<br>
-  |    |    |    +---------- month (1 - 12)<br>
-  |    |    +--------------- day of month (1 - 31)<br>
-  |    +-------------------- hour (0 - 23)<br>
-  +------------------------- min (0 - 59)<br>
-</body>
+<title>Cron Help</title>
+<h1>Help Decoding Cron objects</h1>
+<table padding="10" border="1">
+<tr>
+<td><b>Entry</b></td>
+<td><b>Description</b></td>
+<td><b>Equivalent To</b></td>
+</tr>
+<tr>
+<td>@yearly (or @annually)</td>
+<td>Run once a year, midnight, Jan. 1</td>
+<td>0 0 1 1 *</td>
+</tr>
+<tr>
+<td>@monthly</td>
+<td>Run once a month, midnight, first of month</td>
+<td>0 0 1 * *</td>
+</tr>
+<tr>
+<td>@weekly</td>
+<td>Run once a week, midnight on Sun</td>
+<td>0 0 * * 0</td>
+</tr>
+<tr>
+<td>@daily</td>
+<td>Run once a day, midnight</td>
+<td>0 0 * * *</td>
+</tr>
+<tr>
+<td>@hourly</td>
+<td>Run once an hour, beginning of hour</td>
+<td>0 * * * *</td>
+</tr>
+<tr>
+<td>@reboot</td>
+<td>Run at startup</td>
+<td></td>
+</tr>
+</table>
+</html>

@@ -1,0 +1,27 @@
+local: &LOCAL
+  adapter:  mysql
+  encoding: utf8
+  username: root
+  host:     localhost
+
+#########################
+# client portal DB's
+#########################
+development:
+  <<: *LOCAL
+  database: rg_development
+
+test:
+  <<: *LOCAL
+  database: rg_test
+# same db as test above
+cucumber:
+  <<: *LOCAL
+  database: rg_test
+
+#########################
+# warehouse DB's
+#########################
+realgravity_datawarehouse:
+  <<: *LOCAL
+  database: rg_datawarehouse

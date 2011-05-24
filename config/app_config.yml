@@ -1,0 +1,38 @@
+development:
+  video_url:              'http://localhost:3000/s3/videos.realgravity.com'    
+  video_path:             <%= File.join(RAILS_ROOT, 'public/s3/videos.realgravity.com') %>
+  video_copy_path:        <%= File.join(RAILS_ROOT, 'public/import/site/client/videos.realgravity.com') %>
+  thumbnail_url:          'http://localhost:3000/s3/images.realgravity.com'
+  thumbnail_path:         <%= File.join(RAILS_ROOT, '/public/s3/images.realgravity.com') %>
+  thumbnail_copy_path:    <%= File.join(RAILS_ROOT, 'public/import/site/client/images.realgravity.com') %>
+  on_line:                <%= true %>
+
+test: &test_config
+  video_url:              'http://test.host/s3/videos.realgravity.com'
+  video_path:             <%= File.join(RAILS_ROOT, 'tmp/s3/videos.realgravity.com') %>
+  video_copy_path:        <%= File.join(RAILS_ROOT, 'tmp/import/site/client/videos.realgravity.com') %>
+  thumbnail_url:          'http://test.host/s3/images.realgravity.com'
+  thumbnail_path:         <%= File.join(RAILS_ROOT, 'tmp/s3/images.realgravity.com') %>
+  thumbnail_copy_path:    <%= File.join(RAILS_ROOT, 'tmp/import/site/client/images.realgravity.com') %>
+  on_line:                <%= true %>
+
+cucumber:
+  <<: *test_config
+
+production:
+  video_url:              'http://videos.realgravity.com'    
+  video_path:             '/home/appuser/client_portal/uploads/videos.realgravity.com'
+  video_copy_path:        '/import/site/client/videos.realgravity.com'
+  thumbnail_url:          'http://images.realgravity.com'
+  thumbnail_path:         '/home/appuser/client_portal/uploads/images.realgravity.com'
+  thumbnail_copy_path:    '/import/site/client/images.realgravity.com'
+  on_line:                <%= true %>
+
+staging:
+  video_url:              'http://videos.notgravity.com'
+  video_path:             '/home/appuser/client_portal/uploads/videos.realgravity.com'
+  video_copy_path:        '/import/site/client_portal_staging/videos.realgravity.com'
+  thumbnail_url:          'http://images.notgravity.com'
+  thumbnail_path:         '/home/appuser/client_portal/uploads/images.realgravity.com'
+  thumbnail_copy_path:    '/import/site/client_portal_staging/images.realgravity.com'
+  on_line:                <%= true %>

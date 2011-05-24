@@ -1,45 +1,53 @@
-%p
-  %b Task Title:
-  = h @rg_task.task_title
-%p
-  %b Provider:
-  = h @rg_task.provider
-%p
-  %b Schedule:
-  = h @rg_task.schedule
-%p
-  %b Type:
-  = h @rg_task.worktype
-%p
-  %b Namespace:
-  = h @rg_task.namespace
-%p
-  %b Worker:
-  = h @rg_task.worker
-%p
-  %b Operation:
-  = h @rg_task.operation
-%p
-  %b Url:
-  = h @rg_task.url
-%p
-  %b Schema:
-  = h @rg_task.schema
-%p
-  %b Skip Rehosting:
-  = h @rg_task.skip_rehosting
-%p
-  %b Multi-Page:
-  = h @rg_task.multi_page
-%p
-  %b Disable Validation:
-  = h @rg_task.disable_validation
-%p
-  %b Update if exists:
-  = h @rg_task.update_if_exists
-%p
-  %b Incremental:
-  = h @rg_task.incremental
-= link_to 'Edit', edit_rg_task_path(@rg_task)
-|
-\#{link_to 'Back', rg_tasks_path}
+.inner-container.clearfix
+  .boxin
+    .box.box-100
+      .boxin
+        .header
+          %h3 Scheduled Tasks
+          %a.button{:href => "/rg_tasks/new"} create&nbsp;»
+        .content
+          %p
+            %b Task Title:
+            = h @rg_task.task_title
+          %p
+            %b Provider:
+            = h @rg_task.provider
+          %p
+            %b Schedule:
+            = h @rg_task.schedule
+          %p
+            %b Type:
+            = h @rg_task.worktype
+          %p
+            %b Namespace:
+            = h @rg_task.namespace
+          %p
+            %b Worker:
+            = h @rg_task.worker
+          %p
+            %b Operation:
+            = h @rg_task.operation
+          %p
+            %b Url:
+            = h @rg_task.url
+          %p
+            %b Schema:
+            = h @rg_task.schema
+          %p
+            %b Skip Rehosting:
+            = h @rg_task.skip_rehosting
+          %p
+            %b Multi-Page:
+            = h @rg_task.multi_page
+          %p
+            %b Disable Validation:
+            = h @rg_task.disable_validation
+          %p
+            %b Update if exists:
+            = h @rg_task.update_if_exists
+          %p
+            %b Incremental:
+            = h @rg_task.incremental
+          = link_to 'Edit', edit_rg_task_path(@rg_task)
+          |
+          \#{link_to 'Back', rg_tasks_path}

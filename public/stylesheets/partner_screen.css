@@ -1,0 +1,2676 @@
+/* Styles --------------------------------------------------------------*/
+/* common - based on Eric Meyer's reset, you shouldn't change this section
+======================================*/
+/* line 4, ../../app/stylesheets/partner/_blue_style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* line 14, ../../app/stylesheets/partner/_blue_style.scss */
+body {
+  background: #ddd;
+  font: 75%/1.5 "myriad pro", helvetica, arial, sans-serif;
+  color: #333;
+}
+
+/* line 19, ../../app/stylesheets/partner/_blue_style.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* line 23, ../../app/stylesheets/partner/_blue_style.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 28, ../../app/stylesheets/partner/_blue_style.scss */
+blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 32, ../../app/stylesheets/partner/_blue_style.scss */
+q:before, q:after {
+  content: "";
+}
+
+/* line 35, ../../app/stylesheets/partner/_blue_style.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 38, ../../app/stylesheets/partner/_blue_style.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 41, ../../app/stylesheets/partner/_blue_style.scss */
+hr {
+  display: none;
+}
+
+/* line 44, ../../app/stylesheets/partner/_blue_style.scss */
+strong, b {
+  font-weight: bold;
+}
+
+/* line 47, ../../app/stylesheets/partner/_blue_style.scss */
+em, i {
+  font-style: italic;
+}
+
+/* basic links properties */
+/* line 52, ../../app/stylesheets/partner/_blue_style.scss */
+a {
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}
+/* line 56, ../../app/stylesheets/partner/_blue_style.scss */
+a.alt {
+  border-color: #d0e4f5;
+  color: #0f5290;
+}
+
+/* line 60, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .content a {
+  border-color: #d0e4f5;
+  color: #0f5290;
+}
+
+/* line 65, ../../app/stylesheets/partner/_blue_style.scss */
+a:hover, a:active, a:focus {
+  border-color: #d0e4f5;
+  color: #0a80cf;
+}
+/* line 69, ../../app/stylesheets/partner/_blue_style.scss */
+a.alt:hover, a.alt:active, a.alt:focus {
+  border-color: #d0e4f5;
+  color: #0a80cf;
+}
+
+/* line 74, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .content a:hover, .altbox .content a:active, .altbox .content a:focus {
+  border-color: #d0e4f5;
+  color: #0a80cf;
+}
+
+/* line 78, ../../app/stylesheets/partner/_blue_style.scss */
+a img {
+  border: none;
+}
+
+/* abstract classes
+======================================*/
+/* autocleaning (use for parent of floated element, but take care, it has some limitations) */
+/* line 85, ../../app/stylesheets/partner/_blue_style.scss */
+.cw {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 89, ../../app/stylesheets/partner/_blue_style.scss */
+.cw2 {
+  overflow: hidden;
+  height: 1%;
+}
+
+/* float helpers */
+/* line 95, ../../app/stylesheets/partner/_blue_style.scss */
+.fl {
+  float: left;
+}
+
+/* line 98, ../../app/stylesheets/partner/_blue_style.scss */
+.fr {
+  float: right;
+}
+
+/* classic cleaner */
+/* line 103, ../../app/stylesheets/partner/_blue_style.scss */
+.cleaner {
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  line-height: 0;
+  font-size: 0;
+}
+
+/* safe cleaning, use eg. for parent of floated element */
+/* line 113, ../../app/stylesheets/partner/_blue_style.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* image replacement (see <h1 id="logo"> section in index.html for example) */
+/* line 122, ../../app/stylesheets/partner/_blue_style.scss */
+.ir {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* text align helpers */
+/* line 132, ../../app/stylesheets/partner/_blue_style.scss */
+.tl {
+  text-align: left !important;
+}
+
+/* line 135, ../../app/stylesheets/partner/_blue_style.scss */
+.tr {
+  text-align: right !important;
+}
+
+/* line 138, ../../app/stylesheets/partner/_blue_style.scss */
+.tc {
+  text-align: center !important;
+}
+
+/* line 141, ../../app/stylesheets/partner/_blue_style.scss */
+.tm {
+  vertical-align: middle !important;
+}
+
+/* line 144, ../../app/stylesheets/partner/_blue_style.scss */
+.ttop {
+  vertical-align: top !important;
+}
+
+/* for buttons etc. */
+/* line 149, ../../app/stylesheets/partner/_blue_style.scss */
+.hand {
+  cursor: hand;
+  cursor: pointer;
+}
+
+/* accessible hiding of elements */
+/* line 155, ../../app/stylesheets/partner/_blue_style.scss */
+.a-hidden {
+  position: absolute;
+  top: -10000em;
+}
+
+/* first and last helpers, mainly for table cells */
+/* line 161, ../../app/stylesheets/partner/_blue_style.scss */
+.first {
+  border-left: 0 !important;
+}
+
+/* line 164, ../../app/stylesheets/partner/_blue_style.scss */
+.last {
+  border-right: 0 !important;
+}
+
+/* layout
+======================================*/
+/* line 170, ../../app/stylesheets/partner/_blue_style.scss */
+.inner-container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 174, ../../app/stylesheets/partner/_blue_style.scss */
+#header {
+  border-bottom: 1px solid #2a9fec;
+  background: #0f508d url("/images/partner/header.png") repeat-x;
+  min-height: 100px;
+}
+/* line 178, ../../app/stylesheets/partner/_blue_style.scss */
+#header .inner-container {
+  padding: 20px 0 16px 0;
+}
+/* line 180, ../../app/stylesheets/partner/_blue_style.scss */
+#header #logo {
+  position: relative;
+  float: left;
+  width: 191px;
+  height: 28px;
+  margin-top: 17px;
+}
+/* line 187, ../../app/stylesheets/partner/_blue_style.scss */
+#header #logo a.home {
+  border: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-shadow: #003f6c 1px 1px 0;
+  font-size: 180%;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  /*        .ir {
+            background: url("/images/realgravity_logo1.png"); } 
+  */
+}
+/* line 203, ../../app/stylesheets/partner/_blue_style.scss */
+#header #logo a.button {
+  position: absolute;
+  left: 100%;
+  top: 3px;
+  margin-left: 20px;
+  padding: 4px 9px 4px;
+  white-space: nowrap;
+}
+/* line 210, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox {
+  background: url("/images/partner/userbox.png") no-repeat;
+  position: relative;
+  float: right;
+  width: 225px;
+  min-height: 65px;
+  line-height: 1.3;
+}
+/* line 217, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox .inner {
+  padding: 17px 50px 0 55px;
+}
+/* line 219, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox a#logout {
+  border: 0;
+  position: absolute;
+  right: 14px;
+  top: 21px;
+  display: block;
+  width: 23px;
+  height: 24px;
+  overflow: hidden;
+  line-height: 1;
+  font-size: 90%;
+}
+/* line 230, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox a#logout .ir {
+  background: url("/images/partner/logout.png");
+}
+/* line 232, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox a#logout:hover .ir, #header #userbox a#logout:focus .ir, #header #userbox a#logout:active .ir {
+  background-position: -23px 0;
+}
+/* line 234, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox strong {
+  font-size: 120%;
+  font-weight: normal;
+  color: #fff;
+}
+/* line 238, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox a {
+  border-color: #427da9;
+  color: #d0e1ed;
+}
+/* line 241, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox a:hover, #header #userbox a:active, #header #userbox a:focus {
+  border-color: #9bc4e3;
+  color: #fff;
+}
+/* line 245, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox ul li {
+  display: inline;
+}
+/* line 247, ../../app/stylesheets/partner/_blue_style.scss */
+#header #userbox ul a {
+  float: left;
+  margin-right: 7px;
+}
+
+/* logo: set the width and height of your logo (in px) and margin-top depending on height of your logo */
+/* box for user info, settings and logout */
+/* navigation stripe */
+/* line 257, ../../app/stylesheets/partner/_blue_style.scss */
+#nav {
+  border-top: 1px solid #004483;
+  border-bottom: 1px solid #999;
+  background: #fff;
+}
+/* line 261, ../../app/stylesheets/partner/_blue_style.scss */
+#nav .inner-container {
+  position: relative;
+  z-index: 2;
+  padding: 26px 0 25px 0;
+}
+/* line 265, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 220px;
+}
+/* line 270, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap.active {
+  border: 4px solid rgba(200, 200, 200, 0.5);
+  top: 7px;
+  left: -22px;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+}
+/* line 277, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap.active .inner {
+  border: 1px solid #999;
+  background: #fff;
+  padding: 2px 0 10px 17px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 284, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .h-ico {
+  background: 0 50% no-repeat;
+}
+/* line 286, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .h-ico span {
+  display: block;
+  padding-left: 50px;
+}
+/* line 289, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-dashboard {
+  background-image: url("/images/partner/h-ico/dashboard.png");
+}
+/* line 291, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-comments {
+  background-image: url("/images/partner/h-ico/comments.png");
+}
+/* line 293, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-color {
+  background-image: url("/images/partner/h-ico/color.png");
+}
+/* line 295, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-edit {
+  background-image: url("/images/partner/h-ico/edit.png");
+}
+/* line 297, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-media {
+  background-image: url("/images/partner/h-ico/media.png");
+}
+/* line 299, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-syndication {
+  background-image: url("/images/partner/h-ico/syndication.png");
+}
+/* line 301, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-cash {
+  background-image: url("/images/partner/h-ico/cash.png");
+}
+/* line 303, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-users {
+  background-image: url("/images/partner/h-ico/users.png");
+}
+/* line 305, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-advanced {
+  background-image: url("/images/partner/h-ico/advanced.png");
+}
+/* line 307, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap .ico-send {
+  background-image: url("/images/partner/h-ico/send.png");
+}
+/* line 309, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap h2 {
+  background: url("/images/partner/h-wrap-h2.png") 100% 100% no-repeat;
+  position: relative;
+  float: left;
+  height: 51px;
+  line-height: 55px;
+  vertical-align: middle;
+  font-size: 200%;
+  font-weight: bold;
+}
+/* line 318, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap.active h2 {
+  background: none;
+}
+/* line 321, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap h2 .h-ico {
+  display: block;
+  height: 100%;
+  padding-right: 42px;
+}
+/* line 325, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap h2 .h-arrow {
+  background: url("/images/partner/h-arrow.gif") 0 0 no-repeat;
+  position: absolute;
+  top: 18px;
+  right: 19px;
+  display: block;
+  width: 11px;
+  height: 15px;
+  overflow: hidden;
+}
+/* line 334, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap.active h2 .h-arrow {
+  background-position: 100% 0;
+}
+/* line 336, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap ul {
+  display: none;
+  clear: both;
+}
+/* line 339, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap ul li {
+  display: inline;
+}
+/* line 341, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap ul a {
+  border: 0;
+  display: block;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 45px;
+  vertical-align: middle;
+  font-size: 150%;
+}
+/* line 350, ../../app/stylesheets/partner/_blue_style.scss */
+#nav #h-wrap ul a:hover, #nav #h-wrap ul a:focus, #nav #h-wrap ul a:active {
+  color: #1d78bc;
+}
+/* line 352, ../../app/stylesheets/partner/_blue_style.scss */
+#nav form {
+  background: url("/images/partner/search-input.png") no-repeat;
+  float: right;
+  width: 227px;
+  height: 28px;
+  padding: 0;
+  overflow: hidden;
+  font-family: inherit;
+}
+/* line 360, ../../app/stylesheets/partner/_blue_style.scss */
+#nav form input.text {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  width: 194px;
+  height: 14px;
+  vertical-align: middle;
+  margin: 1px 0 1px 1px;
+  padding: 6px 2px;
+  overflow: hidden;
+  font-size: 100%;
+  color: #555;
+}
+
+/* navigation section switcher */
+/* Set your width for section switcher (only in IE 7 and older, modern browsers will set optimal width automatically) */
+/* feel free to add/modify your own icons - icons are located in "css/img/h-ico/*" */
+/* feel free to add more icons here like above (icon set is included in directory "./img/h-ico" and is free for commercial use) */
+/* search form */
+/* content wrapper */
+/* line 384, ../../app/stylesheets/partner/_blue_style.scss */
+#container {
+  background: url("/images/partner/container.gif") repeat-x;
+}
+/* line 386, ../../app/stylesheets/partner/_blue_style.scss */
+#container .inner-container {
+  position: relative;
+  z-index: 1;
+  left: 10px;
+  width: 980px;
+  padding: 20px 0;
+}
+
+/* line 393, ../../app/stylesheets/partner/_blue_style.scss */
+#footer {
+  clear: both;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+/* line 397, ../../app/stylesheets/partner/_blue_style.scss */
+#footer p {
+  margin: 0 0 10px 0;
+  color: #999;
+}
+/* line 400, ../../app/stylesheets/partner/_blue_style.scss */
+#footer a {
+  color: #777;
+}
+/* line 402, ../../app/stylesheets/partner/_blue_style.scss */
+#footer a:hover, #footer a:active, #footer a:focus {
+  border: none;
+}
+
+/* content styling
+--------------------------------------*/
+/* stylish buttons with rounded corners */
+/* line 410, ../../app/stylesheets/partner/_blue_style.scss */
+.button {
+  border: 1px solid #00487a;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #0567ad url("/images/partner/button.gif") repeat-x;
+  padding: 5px 9px 5px;
+  text-shadow: #00487a 1px 1px 0;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 420, ../../app/stylesheets/partner/_blue_style.scss */
+.button:hover, .button:focus, .button:active {
+  border-color: #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+  color: #fff;
+}
+
+/* alternative colors */
+/* line 428, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .button {
+  border: 1px solid #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+}
+/* line 432, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .button:hover, .altbox .button:focus, .altbox .button:active {
+  border-color: #00487a;
+  background: #0567ad url("/images/partner/button.gif") repeat-x;
+  text-shadow: #00487a 1px 1px 0;
+  color: #fff;
+}
+
+/* line 438, ../../app/stylesheets/partner/_blue_style.scss */
+.altbutton {
+  border: 1px solid #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+}
+/* line 442, ../../app/stylesheets/partner/_blue_style.scss */
+.altbutton:hover, .altbutton:focus, .altbutton:active {
+  border-color: #00487a;
+  background: #0567ad url("/images/partner/button.gif") repeat-x;
+  text-shadow: #00487a 1px 1px 0;
+  color: #fff;
+}
+
+/* line 448, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .altbutton {
+  border: 1px solid #00487a;
+  background: #0567ad url("/images/partner/button.gif") repeat-x;
+  text-shadow: #00487a 1px 1px 0;
+}
+/* line 452, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .altbutton:hover, .altbox .altbutton:focus, .altbox .altbutton:active {
+  border-color: #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+  color: #fff;
+}
+
+/* icons for content links etc. */
+/* line 460, ../../app/stylesheets/partner/_blue_style.scss */
+.ico {
+  border: 0 !important;
+}
+
+/* line 463, ../../app/stylesheets/partner/_blue_style.scss */
+.ico-a {
+  border: 0 !important;
+  padding-left: 20px !important;
+}
+
+/* tags, filetypes */
+/* line 469, ../../app/stylesheets/partner/_blue_style.scss */
+.tag {
+  padding: 4px 7px;
+  color: #fff !important;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+/* line 476, ../../app/stylesheets/partner/_blue_style.scss */
+.tag-gray {
+  /* feel free to add more tag types, just change the colors of gradients/borders */
+  border-bottom: 1px solid #666;
+  background: #999;
+  background: gradient(linear, left top, left bottom, from(#bbbbbb), to(#999999));
+  background: -webkit-gradient(linear, left top, left bottom, from(#bbbbbb), to(#999999));
+}
+
+/* error/information messages */
+/* line 485, ../../app/stylesheets/partner/_blue_style.scss */
+.msg {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  margin: 0 0 15px 0;
+  padding: 8px 10px 0 10px;
+}
+/* line 492, ../../app/stylesheets/partner/_blue_style.scss */
+.msg p {
+  margin: 0 0 8px 0;
+  padding-left: 25px;
+}
+
+/* line 496, ../../app/stylesheets/partner/_blue_style.scss */
+.msg-ok {
+  border-color: #a6d877;
+  background: #d2ecba url("/images/partner/msg-ok.png") repeat-x;
+  color: #336801;
+}
+
+/* line 501, ../../app/stylesheets/partner/_blue_style.scss */
+.msg-error {
+  border-color: #f3abab;
+  background: #f9c9c9 url("/images/partner/msg-error.png") repeat-x;
+  color: #8d0d0d;
+}
+
+/* line 506, ../../app/stylesheets/partner/_blue_style.scss */
+.msg-warn {
+  border-color: #d7e059;
+  background: #f3f7aa url("/images/partner/msg-warn.png") repeat-x;
+  color: #6c6600;
+}
+
+/* line 511, ../../app/stylesheets/partner/_blue_style.scss */
+.msg-info {
+  border-color: #9fd1f5;
+  background: #c3e6ff url("/images/partner/msg-info.png") repeat-x;
+  color: #005898;
+}
+
+/* line 516, ../../app/stylesheets/partner/_blue_style.scss */
+.msg-ok p {
+  background: url("/images/partner/led-ico/accept.png") 0 50% no-repeat;
+}
+
+/* line 519, ../../app/stylesheets/partner/_blue_style.scss */
+.msg-error p {
+  background: url("/images/partner/led-ico/cross_octagon.png") 0 50% no-repeat;
+}
+
+/* line 522, ../../app/stylesheets/partner/_blue_style.scss */
+.msg-warn p {
+  background: url("/images/partner/led-ico/exclamation_octagon_fram.png") 0 50% no-repeat;
+}
+
+/* line 525, ../../app/stylesheets/partner/_blue_style.scss */
+.msg-info p {
+  background: url("/images/partner/led-ico/exclamation.png") 0 50% no-repeat;
+}
+
+/* line 528, ../../app/stylesheets/partner/_blue_style.scss */
+.error {
+  color: #b70b0b;
+}
+
+/* forms */
+/* line 533, ../../app/stylesheets/partner/_blue_style.scss */
+form {
+  padding: 18px;
+}
+/* line 535, ../../app/stylesheets/partner/_blue_style.scss */
+form.plain {
+  padding: 0;
+}
+/* line 537, ../../app/stylesheets/partner/_blue_style.scss */
+form.plain fieldset {
+  border: 0 !important;
+  padding: 0 !important;
+}
+/* line 540, ../../app/stylesheets/partner/_blue_style.scss */
+form.basic dl {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 543, ../../app/stylesheets/partner/_blue_style.scss */
+form.basic dl dt, form.basic dl dd {
+  float: left;
+}
+/* line 545, ../../app/stylesheets/partner/_blue_style.scss */
+form.basic dl dt {
+  padding: 3px 5px 3px 0;
+  width: 20%;
+}
+/* line 548, ../../app/stylesheets/partner/_blue_style.scss */
+form.basic dl dd {
+  padding: 3px 0 3px 5px;
+  width: 76%;
+}
+
+/* plain forms - used in tabular and grid data structures, TAKE CARE of it, please */
+/* basic layout for forms */
+/* line 557, ../../app/stylesheets/partner/_blue_style.scss */
+label.check, label.radio {
+  margin-right: 5px;
+}
+
+/* line 560, ../../app/stylesheets/partner/_blue_style.scss */
+form small {
+  color: #999;
+}
+
+/* line 563, ../../app/stylesheets/partner/_blue_style.scss */
+input.txt, textarea {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #999;
+  background: url("/images/partner/txt.gif") repeat-x;
+  padding: 5px 2px;
+}
+
+/* line 572, ../../app/stylesheets/partner/_blue_style.scss */
+form.basic input.txt, form.basic textarea {
+  width: 100%;
+}
+
+/* line 575, ../../app/stylesheets/partner/_blue_style.scss */
+input.error, textarea.error {
+  border-color: #d35757;
+  background-image: url("/images/partner/txt-error.gif");
+}
+
+/* line 579, ../../app/stylesheets/partner/_blue_style.scss */
+span.loading {
+  background: url("/images/partner/upload.gif") 0 50% no-repeat;
+  padding: 3px 0 3px 20px;
+}
+
+/* line 584, ../../app/stylesheets/partner/_blue_style.scss */
+form.fields fieldset {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px 15px 15px 15px;
+}
+/* line 591, ../../app/stylesheets/partner/_blue_style.scss */
+form.fields fieldset.last {
+  margin-bottom: 0;
+  border-right: 1px solid #ccc !important;
+}
+/* line 594, ../../app/stylesheets/partner/_blue_style.scss */
+form.fields fieldset legend {
+  padding: 0 10px;
+  font-size: 110%;
+}
+/* line 597, ../../app/stylesheets/partner/_blue_style.scss */
+form.fields label, form.fields div.sep {
+  display: block;
+  margin-top: 6px;
+}
+/* line 601, ../../app/stylesheets/partner/_blue_style.scss */
+form.fields label.check, form.fields label.radio {
+  display: inline;
+  margin-top: 0;
+}
+/* line 604, ../../app/stylesheets/partner/_blue_style.scss */
+form.fields span.loading {
+  margin-left: 10px;
+}
+
+/* plain and clean layout for forms */
+/* lists for actions (remove, modify) */
+/* line 611, ../../app/stylesheets/partner/_blue_style.scss */
+ul.actions {
+  margin: 0;
+}
+/* line 613, ../../app/stylesheets/partner/_blue_style.scss */
+ul.actions li {
+  display: inline;
+  margin-right: 5px;
+}
+
+/* content boxes */
+/* line 619, ../../app/stylesheets/partner/_blue_style.scss */
+.box {
+  float: left;
+  width: 960px;
+  margin: 0 20px 20px 0;
+}
+
+/* line 624, ../../app/stylesheets/partner/_blue_style.scss */
+.box-25 {
+  width: 225px;
+}
+
+/* 25% box */
+/* line 629, ../../app/stylesheets/partner/_blue_style.scss */
+.box-50 {
+  width: 470px;
+}
+
+/* 50% box */
+/* line 634, ../../app/stylesheets/partner/_blue_style.scss */
+.box-75 {
+  width: 715px;
+}
+
+/* 75% box */
+/* line 639, ../../app/stylesheets/partner/_blue_style.scss */
+.box-100 {
+  width: 960px;
+}
+
+/* 100% box */
+/* class for alternative (emphasized) boxes (blue headings and colors) */
+/* wrap of box's content */
+/* line 649, ../../app/stylesheets/partner/_blue_style.scss */
+.boxin {
+  box-shadow: #aaa 0 0 10px;
+  -webkit-box-shadow: #aaa 0 0 10px;
+  -moz-box-shadow: #aaa 0 0 10px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  background: #fff;
+}
+
+/* boxes' headers */
+/* line 661, ../../app/stylesheets/partner/_blue_style.scss */
+.box .header {
+  background: #3d3d3d url("/images/partner/headerbox.png") repeat-x;
+  border-top: 1px solid #444;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  position: relative;
+  margin: -1px -1px 0 -1px;
+  padding: 7px 0 9px 20px;
+}
+
+/* line 673, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .header {
+  border-top-color: #0a81d0;
+  background: #0f518e url("/images/partner/altheaderbox.png") repeat-x;
+}
+
+/* line 677, ../../app/stylesheets/partner/_blue_style.scss */
+.box .header h3 {
+  position: relative;
+  top: 2px;
+  display: inline;
+  font-size: 150%;
+  color: #fff;
+  text-shadow: #151515 0 1px 0;
+}
+
+/* line 685, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .header h3 {
+  text-shadow: #003d68 0 1px 0;
+}
+
+/* line 689, ../../app/stylesheets/partner/_blue_style.scss */
+.box .header .button {
+  margin-left: 15px;
+}
+/* line 691, ../../app/stylesheets/partner/_blue_style.scss */
+.box .header ul {
+  position: absolute;
+  right: 9px;
+  bottom: 0;
+}
+/* line 695, ../../app/stylesheets/partner/_blue_style.scss */
+.box .header ul li {
+  display: inline;
+}
+/* line 697, ../../app/stylesheets/partner/_blue_style.scss */
+.box .header ul a {
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  background: #777;
+  border: 0;
+  float: left;
+  margin: 0 0 0 5px;
+  padding: 8px 13px 6px;
+  color: #fff;
+}
+/* line 709, ../../app/stylesheets/partner/_blue_style.scss */
+.box .header ul a.active, .box .header ul a:hover, .box .header ul a:focus, .box .header ul a:active {
+  background: white url("/images/partner/headertab.png") repeat-x;
+  color: #444;
+}
+
+/* tags in the header */
+/* line 715, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .header ul a {
+  background-color: #489cd4;
+}
+/* line 717, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .header ul a.active, .altbox .header ul a:hover, .altbox .header ul a:focus, .altbox .header ul a:active {
+  background: white url("/images/partner/altheadertab.png") repeat-x;
+  color: #0f518e;
+}
+
+/* boxes' content types – tabular */
+/* line 723, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content {
+  margin-bottom: 5px;
+}
+/* line 725, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table {
+  width: 100%;
+}
+/* line 727, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table th, .box .content table td {
+  padding: 10px 10px 8px 10px;
+}
+/* line 729, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table th {
+  text-align: left;
+  font-weight: normal;
+}
+/* line 733, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table tr.even th, .box .content table tr.even td {
+  background: #f5f5f5;
+}
+
+/* line 737, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .content table tr.even th, .altbox .content table tr.even td {
+  background: #f0f9ff;
+}
+
+/* line 741, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table th.first, .box .content table td.first {
+  padding-left: 20px;
+}
+/* line 744, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table thead th, .box .content table thead td {
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #d5d5d5;
+  background: #dddddd url("/images/partner/thead.gif") repeat-x;
+  text-shadow: #fff 0 1px 0;
+}
+/* line 750, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table tbody tr.first th, .box .content table tbody tr.first td {
+  border-top: 1px solid #bbb;
+}
+
+/* line 753, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .content table tbody {
+  color: #00305d;
+}
+
+/* line 758, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table a.ico-comms {
+  border: 0;
+  background: url("/images/partner/ico-tablecomms.gif") 50% 60% no-repeat;
+  padding: 10px;
+  color: #fff;
+}
+/* line 764, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table tfoot th, .box .content table tfoot td {
+  border-top: 1px solid #ccc;
+  background: white url("/images/partner/tfoot.gif") repeat-x;
+}
+/* line 767, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content ul.simple li {
+  clear: both;
+  padding: 10px 20px 8px 20px;
+  overflow: hidden;
+}
+/* line 771, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content table tr.even th, .box .content ul.simple li.even {
+  background: #f5f5f5;
+}
+
+/* boxes' content types – simple list */
+/* line 777, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .content table tr.even th, .altbox .content ul.simple li.even {
+  background: #f0f9ff;
+}
+
+/* line 782, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content ul.simple strong {
+  float: left;
+  font-weight: normal;
+}
+/* line 785, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content ul.simple span {
+  float: right;
+}
+/* line 787, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .line {
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* boxes' content types – grid */
+/* line 794, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .content .grid .line {
+  border-bottom-color: #c7dfef;
+}
+
+/* line 797, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .even {
+  background: #f5f5f5;
+}
+
+/* line 800, ../../app/stylesheets/partner/_blue_style.scss */
+.altbox .content .grid .even {
+  background: #f0f9ff;
+}
+
+/* line 804, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .item {
+  float: left;
+  width: 50%;
+}
+/* line 807, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .item .inner {
+  padding: 17px 15px 12px 20px;
+}
+/* line 809, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .firstline {
+  border-top: 0 !important;
+}
+/* line 811, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .lastline {
+  border-bottom: 0 !important;
+}
+/* line 814, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .item a.thumb {
+  border: 0;
+  float: left;
+}
+/* line 817, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .item .data {
+  margin-left: 165px;
+}
+/* line 819, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .item h4 {
+  margin: 0 0 10px 0;
+  font-size: 110%;
+  font-weight: bold;
+}
+/* line 823, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .item h4 span {
+  margin-right: 5px;
+  font-weight: normal;
+  font-size: 90%;
+}
+/* line 827, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid .item p {
+  margin: 0 0 5px 0;
+  color: #666;
+}
+/* line 830, ../../app/stylesheets/partner/_blue_style.scss */
+.box .content .grid ul.actions {
+  margin-top: 8px;
+}
+
+/* boxes' pagination */
+/* line 835, ../../app/stylesheets/partner/_blue_style.scss */
+.pagination {
+  border-top: 1px solid #999;
+  background: white url("/images/partner/pagination.gif") repeat-x;
+  text-align: center;
+  color: #333 !important;
+}
+/* line 840, ../../app/stylesheets/partner/_blue_style.scss */
+.pagination ul {
+  position: relative;
+  top: -1px;
+  padding: 12px 10px 6px;
+}
+/* line 844, ../../app/stylesheets/partner/_blue_style.scss */
+.pagination ul li {
+  display: inline;
+}
+/* line 846, ../../app/stylesheets/partner/_blue_style.scss */
+.pagination a {
+  border: 0;
+  background: #ebebeb url("/images/partner/pagination-item.gif") repeat-x;
+  margin: 0 5px;
+  padding: 6px 10px;
+  color: #333 !important;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 5px;
+}
+/* line 855, ../../app/stylesheets/partner/_blue_style.scss */
+.pagination a:hover, .pagination a:active, .pagination a:focus {
+  color: #0a80cf !important;
+}
+/* line 857, ../../app/stylesheets/partner/_blue_style.scss */
+.pagination strong {
+  background: url("/images/partner/pagination-arrow.gif") 50% 0 no-repeat;
+  padding: 15px 10px 8px;
+}
+
+/* calendar */
+/* line 863, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar {
+  width: 100%;
+}
+/* line 865, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar thead {
+  zoom: 1;
+}
+/* line 867, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar thead tr {
+  zoom: 1;
+}
+/* line 869, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar thead th.month {
+  border-bottom: 1px solid #bbb;
+  font-weight: bold;
+  font-size: 120%;
+  zoom: 1;
+}
+/* line 874, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar thead th.month a {
+  border: none;
+  position: relative;
+  top: 5px;
+  margin: 0 10px;
+  zoom: 1;
+}
+/* line 880, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar th, table.calendar td {
+  width: 14.3%;
+  text-align: center;
+}
+/* line 884, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar tbody td, table.calendar tbody th {
+  border: 1px solid #ddd;
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
+/* line 888, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar strong {
+  font-size: 140%;
+}
+/* line 890, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar .inactive {
+  color: #aaa;
+}
+/* line 892, ../../app/stylesheets/partner/_blue_style.scss */
+table.calendar div.items a {
+  border: 0;
+  margin: 0 1px;
+}
+
+/* login page */
+/* line 898, ../../app/stylesheets/partner/_blue_style.scss */
+#login {
+  background: #222;
+  padding: 100px;
+}
+/* line 901, ../../app/stylesheets/partner/_blue_style.scss */
+#login .box {
+  float: none;
+  margin: 0 auto;
+}
+/* line 904, ../../app/stylesheets/partner/_blue_style.scss */
+#login .boxin {
+  box-shadow: #111 0 0 10px;
+  -webkit-box-shadow: #111 0 0 10px;
+  -moz-box-shadow: #111 0 0 10px;
+  border: 0;
+}
+/* line 909, ../../app/stylesheets/partner/_blue_style.scss */
+#login .header {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+/* line 913, ../../app/stylesheets/partner/_blue_style.scss */
+#login table {
+  width: 75%;
+  margin: 0 auto;
+}
+/* line 916, ../../app/stylesheets/partner/_blue_style.scss */
+#login th, #login td {
+  padding: 0 0 5px 0;
+}
+/* line 918, ../../app/stylesheets/partner/_blue_style.scss */
+#login th {
+  width: 60px;
+}
+/* line 920, ../../app/stylesheets/partner/_blue_style.scss */
+#login td.proceed {
+  padding-right: 0;
+}
+/* line 922, ../../app/stylesheets/partner/_blue_style.scss */
+#login td.proceed input {
+  margin: 0;
+}
+/* line 925, ../../app/stylesheets/partner/_blue_style.scss */
+#login input.txt {
+  width: 260px;
+}
+
+/* line 1, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic {
+  /* ol li.date fieldsets*/
+  /* ol li.radio fieldsets*/
+}
+/* line 2, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px 15px 15px 15px;
+}
+/* line 10, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li {
+  width: 100%;
+  padding-bottom: 10px;
+  vertical-align: middle;
+}
+/* line 15, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li.last {
+  margin-bottom: 0;
+}
+/* line 19, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li label {
+  width: 9em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block;
+  padding: 5px;
+}
+/* line 27, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li label.error {
+  width: auto;
+  float: none;
+  display: inline;
+  margin: 0 0 0 10px;
+}
+/* line 33, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li select {
+  padding: 5px;
+}
+/* line 39, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li.error input {
+  border-color: #d35757;
+  background: url("/images/partner/txt-error.gif") repeat-x;
+}
+/* line 44, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li p.inline-errors {
+  width: 60%;
+  margin-left: 8.5em;
+}
+/* line 49, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs input, form.formtastic fieldset.inputs textarea {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #999;
+  background: url("/images/partner/txt.gif") repeat-x;
+  padding: 5px 5px 5px 5px;
+  width: 60%;
+}
+/* line 58, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs.last {
+  margin-bottom: 0;
+  border-right: 1px solid #ccc !important;
+}
+/* line 61, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs legend {
+  padding: 0 10px;
+  font-size: 110%;
+}
+/* line 64, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic div.sep {
+  display: block;
+  margin-top: 6px;
+}
+/* line 69, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic label.check, form.formtastic label.radio {
+  display: inline;
+  margin-top: 0;
+}
+/* line 72, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic span.loading {
+  margin-left: 10px;
+}
+/* line 76, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.buttons .commit input {
+  border: 1px solid #00487a;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #0567ad url("/images/partner/button.gif") repeat-x;
+  padding: 5px 9px 5px;
+  text-shadow: #00487a 1px 1px 0;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 86, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.buttons .commit input:hover, form.formtastic fieldset.buttons .commit input:focus, form.formtastic fieldset.buttons .commit input:active {
+  border-color: #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+  color: #fff;
+}
+/* line 91, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.buttons ol {
+  text-align: right;
+}
+/* line 93, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.buttons ol li {
+  display: inline;
+}
+/* line 101, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic ol li.date legend {
+  padding: 0 0px;
+  font-size: 100%;
+}
+/* line 105, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic ol li.date ol li {
+  display: inline;
+}
+/* line 108, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic ol li.date ol li label {
+  display: none;
+}
+/* line 115, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic ol li.radio legend {
+  padding: 0 0px;
+  font-size: 100%;
+}
+/* line 119, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic ol li.radio ol li {
+  display: inline;
+}
+/* line 121, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic ol li.radio ol li label {
+  width: auto;
+}
+/* line 123, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic ol li.radio ol li label input {
+  width: auto;
+}
+
+/* line 132, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset ol li p.inline-hints {
+  font-style: italic;
+  font-size: 11px;
+  padding-left: 11.5em;
+}
+
+/* line 139, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li.boolean label {
+  padding-left: 10.5em;
+  float: none;
+  display: inline;
+}
+/* line 143, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li.boolean label input {
+  width: 15px;
+}
+
+/* line 148, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol ol li.form_label {
+  width: 9em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block;
+  padding: 5px;
+}
+
+/* line 157, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol ol li.form_value {
+  width: 20em;
+  float: left;
+  text-align: left;
+  margin-right: 0.5em;
+  display: block;
+  padding: 5px;
+}
+
+/* line 168, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li label {
+  width: 9em;
+}
+/* line 171, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li input {
+  width: 60%;
+}
+
+/* line 176, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs ol li p.inline-errors {
+  margin-left: 10.5em;
+}
+
+/* line 182, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs input.file_upload {
+  border: none;
+  background: none;
+  padding-top: 2px;
+}
+
+/* line 188, ../../app/stylesheets/_realgravity_forms.scss */
+span.loading {
+  display: none;
+  background: url("/images/partner/upload.gif") 0 50% no-repeat;
+  padding: 3px 0 3px 20px;
+}
+
+/* line 193, ../../app/stylesheets/_realgravity_forms.scss */
+form.formtastic fieldset.inputs input.color {
+  background: none;
+}
+
+/* stylish buttons with rounded corners */
+/* line 3, ../../app/stylesheets/_realgravity_buttons.scss */
+a.button {
+  border: 1px solid #00487a;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #0567ad url("/images/partner/button.gif") repeat-x;
+  padding: 8px 9px 7px 9px;
+  text-shadow: #00487a 1px 1px 0;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 13, ../../app/stylesheets/_realgravity_buttons.scss */
+a.button:hover, a.button:focus, a.button:active {
+  border-color: #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+  color: #fff;
+}
+
+/* alternative colors */
+/* line 21, ../../app/stylesheets/_realgravity_buttons.scss */
+.altbox a.button {
+  border: 1px solid #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+}
+/* line 25, ../../app/stylesheets/_realgravity_buttons.scss */
+.altbox a.button:hover, .altbox a.button:focus, .altbox a.button:active {
+  border-color: #00487a;
+  background: #0567ad url("/images/partner/button.gif") repeat-x;
+  text-shadow: #00487a 1px 1px 0;
+  color: #fff;
+}
+
+/* line 31, ../../app/stylesheets/_realgravity_buttons.scss */
+a.altbutton {
+  border: 1px solid #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+}
+/* line 35, ../../app/stylesheets/_realgravity_buttons.scss */
+a.altbutton:hover, a.altbutton:focus, a.altbutton:active {
+  border-color: #00487a;
+  background: #0567ad url("/images/partner/button.gif") repeat-x;
+  text-shadow: #00487a 1px 1px 0;
+  color: #fff;
+}
+
+/* line 41, ../../app/stylesheets/_realgravity_buttons.scss */
+.altbox a.altbutton {
+  border: 1px solid #00487a;
+  background: #0567ad url("/images/partner/button.gif") repeat-x;
+  text-shadow: #00487a 1px 1px 0;
+}
+/* line 45, ../../app/stylesheets/_realgravity_buttons.scss */
+.altbox a.altbutton:hover, .altbox a.altbutton:focus, .altbox a.altbutton:active {
+  border-color: #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+  color: #fff;
+}
+
+/* line 51, ../../app/stylesheets/_realgravity_buttons.scss */
+.altbox .content a.button {
+  color: #FFFFFF;
+}
+
+/* line 55, ../../app/stylesheets/_realgravity_buttons.scss */
+.cancel_button {
+  margin-right: 1em;
+}
+
+/* line 58, ../../app/stylesheets/_realgravity_buttons.scss */
+.back_button {
+  display: block;
+  float: right;
+  padding: 15px;
+}
+
+/* add buttons from links */
+/* line 66, ../../app/stylesheets/_realgravity_buttons.scss */
+.altbox .content .delete_button ol li a {
+  border: 1px solid #7a0000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #8e0f0f url("/images/admin/button.gif") repeat-x;
+  padding: 5px 9px 5px;
+  text-shadow: #5d0101 1px 1px 0;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 76, ../../app/stylesheets/_realgravity_buttons.scss */
+.altbox .content .delete_button ol li a:hover, .altbox .content .delete_button ol li a:focus, .altbox .content .delete_button ol li a:active {
+  border-color: #272727;
+  background: #2a2a2a url("/images/partner/altbutton.gif") repeat-x;
+  text-shadow: #000 1px 1px 0;
+  color: #fff;
+}
+
+/* line 84, ../../app/stylesheets/_realgravity_buttons.scss */
+.link_buttons {
+  display: inline;
+  float: right;
+  margin: 1em;
+}
+/* line 89, ../../app/stylesheets/_realgravity_buttons.scss */
+.link_buttons .right {
+  margin-left: 1em;
+}
+
+/* main font styles */
+@font-face {
+  font-family: "/fonts/Diavlo Light";
+  src: url(/fonts/Diavlo_LIGHT_II_37.eot);
+  /* Hello, IE */
+  src: local("/fonts/Diavlo Light"), url(/fonts/Diavlo_LIGHT_II_37.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "/fonts/Diavlo Bold";
+  src: url(/fonts/Diavlo_BOLD_II_37.eot);
+  /* Hello, IE */
+  src: local("/fonts/Diavlo Bold"), url(/fonts/Diavlo_BOLD_II_37.otf) format("opentype");
+}
+
+/* Hide menu_selection ID*/
+/* line 20, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#container .inner-container, #nav .inner-container, #header .inner-container {
+  width: 1180px;
+  /* 25% box */
+  /* 50% box */
+  /* 75% box */
+}
+/* line 23, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#container .inner-container .box, #nav .inner-container .box, #header .inner-container .box {
+  width: 1180px;
+}
+/* line 27, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#container .inner-container .box-25, #nav .inner-container .box-25, #header .inner-container .box-25 {
+  width: 285px;
+}
+/* line 33, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#container .inner-container .box-50, #nav .inner-container .box-50, #header .inner-container .box-50 {
+  width: 570px;
+}
+/* line 39, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#container .inner-container .box-75, #nav .inner-container .box-75, #header .inner-container .box-75 {
+  width: 885px;
+}
+/* line 45, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#container .inner-container .box-100, #nav .inner-container .box-100, #header .inner-container .box-100 {
+  width: 1180px;
+}
+
+/* line 52, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#menu_selection {
+  display: none;
+}
+
+/* Remove border under a link_to for the action icons*/
+/* line 58, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.actions li a {
+  border: none;
+}
+
+/*Format error codes using the template*/
+/* line 65, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#errorExplanation {
+  border-color: #f3abab;
+  background: #f9c9c9 url("/images/partner/msg-error.png") repeat-x;
+  color: #8d0d0d;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  margin: 0 0 15px 0;
+  padding: 8px 10px 0 10px;
+}
+/* line 76, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#errorExplanation h2 {
+  display: none;
+}
+/* line 80, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#errorExplanation p {
+  margin: 0 0 8px 0;
+  padding-left: 25px;
+  background: url("/images/partner/led-ico/cross_octagon.png") 0 50% no-repeat;
+}
+/* line 86, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+/* line 88, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#errorExplanation ul li {
+  list-style: disc;
+}
+
+/* line 96, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#sitename {
+  position: relative;
+  float: left;
+  height: 28px;
+  margin-top: 17px;
+  border: 0;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  text-shadow: #003f6c 1px 1px 0;
+  font-size: 180%;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  width: 45%;
+}
+
+/* Nav Menu */
+/* topmeenu, dropdown */
+/* Set the height of the Nav Bar*/
+/* line 119, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#nav .inner-container {
+  padding: 20px 0px 0px;
+}
+
+/* line 123, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#nav {
+  border-top: 1px solid #004483;
+  /*border-bottom: 3px solid #2C66BA;*/
+  background: #fff;
+  border: none;
+}
+
+/* line 130, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.top-menu {
+  width: 100%;
+  height: 30px;
+  font: 24px Diavlo Light,Arial,Helvetica,Sans-serif;
+}
+
+/* line 135, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+h2 {
+  float: left;
+  vertical-align: top;
+  padding: 3px 0 0 40px;
+  width: 500px;
+}
+
+/* line 142, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown {
+  float: right;
+  position: relative;
+  z-index: 7;
+  vertical-align: middle;
+}
+/* line 147, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown li {
+  display: block;
+  line-height: 1.3em;
+  vertical-align: middle;
+  /*zoom: 1;*/
+}
+/* line 152, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown li.hover, ul.dropdown li:hover {
+  position: relative;
+  z-index: 9;
+  cursor: default;
+}
+/* line 156, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown ul {
+  visibility: hidden;
+  position: absolute;
+  top: 30px;
+  left: 8px;
+  z-index: 8;
+  width: 143px;
+  font: 12px Arial,Helvetica,Sans-serif;
+  font-weight: bold;
+  background: url(/images/home/images/topmenu_sub_2.gif) left bottom no-repeat;
+}
+/* line 166, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown ul li {
+  float: none;
+}
+/* line 168, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown ul ul {
+  top: 1px;
+  left: 99%;
+}
+/* line 171, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown li:hover > ul {
+  visibility: visible;
+}
+/* line 173, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item {
+  display: block;
+  float: left;
+}
+/* line 176, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item a {
+  border: none;
+  display: block;
+  padding: 0 10px;
+  color: #666;
+  text-decoration: none;
+}
+/* line 182, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown li.active a {
+  color: #000;
+  padding-bottom: 20px;
+  background: url(/images/home/blue/grey_menu_arrow.png) center bottom no-repeat;
+}
+/* line 187, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item a:hover {
+  color: #005390;
+}
+/* line 190, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item ul li {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 192, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item ul a {
+  display: block;
+  float: none;
+  padding: 5px 5px 5px 15px;
+  height: auto;
+  background: none;
+  color: #666;
+}
+/* line 199, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown li.active ul a {
+  display: block;
+  float: none;
+  padding: 5px 5px 5px 15px;
+  height: auto;
+  background: none;
+  color: #666;
+}
+/* line 207, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item ul a:hover {
+  background: url(/images/home/images/topmenu_sub_bg.gif) repeat-y #f1f1f1;
+  color: #000;
+}
+/* line 210, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item ul .last {
+  border-bottom: none;
+}
+/* line 212, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item ul .last a {
+  padding: 5px 5px 10px 15px;
+}
+/* line 214, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item ul .last a:hover {
+  background: url(/images/home/images/topmenu_sub_last_a.gif) left bottom no-repeat;
+}
+/* line 216, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item ul .first a {
+  background: url(/images/home/images/topmenu_sub_1.gif) left top no-repeat;
+  padding: 20px 5px 5px 15px;
+}
+/* line 219, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+ul.dropdown .root-item ul .first a:hover {
+  background: url(/images/home/images/topmenu_sub_1.gif) left top no-repeat;
+}
+
+/* Change the height of the Blue Header to be smaller than the White Nav*/
+/* line 224, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#header {
+  min-height: 20px;
+}
+/* line 226, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#header .inner-container {
+  padding: 5px 0 5px 0;
+}
+
+/* Formating for a report header*/
+/* line 232, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.summary {
+  margin: 0 147px;
+}
+
+/* line 235, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_header {
+  width: 100%;
+}
+/* line 237, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_header th {
+  vertical-align: middle;
+  padding-right: 10px;
+}
+/* line 240, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_header th h3 {
+  position: static;
+}
+/* line 244, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_header .first, table.report_header .last {
+  width: 20%;
+}
+/* line 247, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_header #report-form-th {
+  padding: 0;
+  text-align: center !important;
+}
+
+/* line 253, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#provider_videos td.first {
+  width: 35%;
+}
+
+/* line 259, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form#report-form label {
+  color: white;
+  font-size: 120%;
+}
+/* line 263, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form#report-form label + label {
+  margin-left: 5px;
+}
+/* line 266, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form#report-form input.datepicker {
+  width: 7em;
+}
+
+/* line 272, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_list .cps-group {
+  background: green;
+}
+/* line 275, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_list thead.details-head td {
+  background: #bbb;
+  font-weight: bold;
+  border: none;
+  border-top: 2px solid #666;
+}
+/* line 281, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_list thead.details-head.subhead td {
+  background: #ddd;
+  font-weight: bold;
+}
+/* line 285, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_list thead a.details {
+  float: left;
+  width: 16px;
+  height: 16px;
+  background: url(/images/minus.gif);
+}
+/* line 291, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_list thead.subhead a.details {
+  margin-left: 20px;
+}
+/* line 294, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_list thead.child-hidden a.details {
+  background: url(/images/plus.gif);
+}
+/* line 297, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+table.report_list .this-hidden {
+  display: none;
+}
+
+/*Hide the report print header*/
+/* line 304, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#print-details {
+  display: none;
+}
+
+/* line 308, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.rg_color {
+  color: #007FC8;
+}
+
+/* line 312, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.total {
+  font-size: 110%;
+  font-weight: bold;
+  border: 5px solid #000;
+}
+
+/* line 318, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.w_10 {
+  width: 10%;
+}
+
+/* line 322, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.w_75px {
+  width: 75px;
+}
+
+/* line 326, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.w_640px {
+  width: 640px;
+}
+
+/* line 331, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.w_25 {
+  width: 25%;
+}
+
+/* line 335, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.w_50 {
+  width: 50%;
+}
+
+/* line 339, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.w_50_px {
+  width: 50px;
+}
+
+/* line 343, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.pad_20 {
+  padding: 10px 0;
+}
+
+/* line 347, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+tr.double_space td {
+  padding-top: 20px;
+}
+
+/* line 352, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.home_page .content p {
+  font-size: 150%;
+  padding: 20px 20px 5px 60px;
+}
+/* line 356, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.home_page .content ul {
+  padding: 5px 20px 0px 60px;
+}
+/* line 358, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.home_page .content ul li {
+  font-size: 125%;
+  padding: 5px 20px 10px 30px;
+}
+
+/* line 365, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#header #logo {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 50px;
+  margin-top: 7px;
+}
+
+/* line 373, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.video_title {
+  font-size: 150%;
+}
+
+/*put the tabs on the left*/
+/* line 378, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.box .header .left {
+  min-height: 23px;
+  padding-top: 7px;
+}
+/* line 382, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.box .header .left ul {
+  left: 9px;
+  width: 30em;
+}
+/* line 386, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.box .header .left a.button {
+  margin-left: 30em;
+}
+
+/* For Players*/
+/* line 393, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#player {
+  background: url("/images/partner/container.gif") repeat-x;
+}
+/* line 395, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#player .inner-container {
+  position: relative;
+  z-index: 1;
+  left: 10px;
+  width: 1180px;
+  padding: 20px 0;
+}
+/* line 402, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#player .inner-container .box-100 {
+  width: 1180px;
+}
+
+/* line 412, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players .inline {
+  display: inline;
+}
+/* line 415, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players td {
+  padding: 10px 0px 8px 0px;
+}
+/* line 418, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form {
+  padding: 5px;
+}
+/* line 421, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players th.first, #players .table td.first {
+  padding-left: 10px;
+  min-height: 600px;
+}
+/* line 425, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players element.style {
+  display: block;
+}
+/* line 430, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs {
+  font-size: 85%;
+}
+/* line 433, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol li.boolean label {
+  padding-left: 9.5em;
+  float: none;
+  display: inline;
+}
+/* line 437, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol li.boolean label input {
+  width: 15px;
+}
+/* line 442, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol li label {
+  width: 8em;
+}
+/* line 445, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol li input, #players form.formtastic fieldset.inputs ol li textarea {
+  width: 70%;
+}
+/* line 448, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol li p.inline-errors p.inline-hints {
+  margin-left: 7.5em;
+}
+/* line 455, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol fieldset ol li.boolean label {
+  padding-left: 9.5em;
+  float: none;
+  display: inline;
+}
+/* line 459, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol fieldset ol li.boolean label input {
+  width: 15px;
+}
+/* line 464, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol fieldset ol li label {
+  width: 10em;
+}
+/* line 467, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol fieldset ol li input, #players form.formtastic fieldset.inputs ol fieldset ol li textarea {
+  width: 50%;
+}
+/* line 470, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol fieldset ol li select {
+  margin-top: 5px;
+}
+/* line 473, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol fieldset ol li p.inline-errors {
+  margin-left: 10.5em;
+}
+/* line 479, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol li.radio legend {
+  padding: 0 0px;
+  font-size: 100%;
+}
+/* line 483, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol li.radio ol li {
+  display: inline;
+}
+/* line 485, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol li.radio ol li label {
+  width: auto;
+}
+/* line 487, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset.inputs ol li.radio ol li label input {
+  width: auto;
+}
+
+/* line 497, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#players form.formtastic fieldset ol li p.inline-hints {
+  padding-left: 11em;
+}
+
+/*#players form.formtastic fieldset.inputs ol .theme_save_as {
+	display:inline;
+	li {
+		width:95%;
+		input.theme_select {
+			width:40%;
+		}
+	}
+}
+*/
+/*.theme_save_as li.buttons a.button {
+	margin-top:-15px;
+}
+*/
+/*control the modal dialog box*/
+/* line 519, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.spinning_logo .ui-dialog .ui-dialog-titlebar-close {
+  display: none;
+}
+/* line 523, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.spinning_logo .ui-widget-header {
+  display: none;
+}
+
+/* line 527, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.rotate_img {
+  height: 32px;
+  width: 32px;
+}
+
+/* line 532, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.dialog {
+  margin: 50px 0 0 40px;
+}
+/* line 535, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.dialog span.rotate_logo {
+  background: url("/images/rotate_3.gif") 0 75% no-repeat;
+  padding: 55px 0 25px 40px;
+  margin-top: 50px;
+}
+
+/* line 542, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.trash {
+  width: 20px;
+  height: auto;
+}
+
+/*.warning {
+	display:inline-block;
+	margin:30px;
+	width: 50px;
+	height : auto;
+}
+*/
+/* line 554, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.error_text {
+  background: url("/images/error_sm.gif") center left no-repeat;
+  padding: 10px 0 25px 55px;
+  margin-left: 25px;
+}
+
+/*fieldset.players {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px 15px 15px 15px;
+}
+*/
+/*.flash_player {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px 15px 15px 15px;
+	margin-top:15px;	
+}
+*/
+/* line 581, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.check_boxes_providers li fieldset legend {
+  display: none;
+}
+/* line 587, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.check_boxes_providers li fieldset label li.check_boxes fieldset ol li {
+  width: 50%;
+}
+/* line 589, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.check_boxes_providers li fieldset label li.check_boxes fieldset ol li label {
+  margin-left: 10.5em;
+  margin-top: -2.5em;
+}
+/* line 592, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.check_boxes_providers li fieldset label li.check_boxes fieldset ol li label input {
+  display: inline;
+}
+
+/* line 602, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#volume_field ol {
+  display: inline;
+}
+/* line 604, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#volume_field ol li {
+  width: 40%;
+  float: left;
+}
+/* line 607, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#volume_field ol li #volume {
+  width: 20px;
+}
+/* line 610, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#volume_field ol li #volume_slider {
+  margin-top: 8px;
+  width: 150px;
+}
+
+/* line 618, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.player_size {
+  padding: 15px;
+  margin-right: 45px;
+  font-size: 150%;
+}
+
+/* line 625, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.flash_player {
+  width: 600px;
+  height: 700px;
+  overflow: scroll;
+}
+
+/* line 631, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.embed_player {
+  width: 500px;
+  height: 500px;
+  overflow: scroll;
+}
+
+/* line 637, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.pub_chart {
+  float: left;
+}
+
+/* line 642, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#modal-embed-form {
+  font-size: 85%;
+}
+/* line 645, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#modal-embed-form fieldset.inputs {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 15px;
+  padding: 10px 15px 15px 15px;
+}
+/* line 653, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#modal-embed-form fieldset.inputs legend {
+  padding: 0 10px;
+  font-size: 150%;
+}
+/* line 658, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#modal-embed-form fieldset.inputs ol li label {
+  padding-right: 20px;
+}
+/* line 664, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#modal-embed-form fieldset.inputs table#single-embed-player tr h1 {
+  font-size: 110%;
+  margin: 25px;
+  font-weight: bold;
+}
+/* line 671, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#modal-embed-form fieldset.inputs table#single-embed-player td {
+  margin: 30px;
+}
+/* line 673, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#modal-embed-form fieldset.inputs table#single-embed-player td #copy {
+  margin-top: 30px;
+  text-align: right;
+}
+/* line 677, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+#modal-embed-form fieldset.inputs table#single-embed-player td #players {
+  width: 80%;
+  margin: 40px;
+}
+
+/* line 689, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.my_clip_button {
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #ccc;
+  margin: 10px;
+  padding: 10px;
+  cursor: default;
+  font-size: 9pt;
+}
+
+/* line 690, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.my_clip_button.hover {
+  background-color: #eee;
+}
+
+/* line 691, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.my_clip_button.active {
+  background-color: #aaa;
+}
+
+/* line 693, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.no-records-found {
+  font-size: 150%;
+  margin: 30px;
+}
+
+/* line 698, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+.rg_recaptcha {
+  margin-left: 50px;
+}
+
+/* line 703, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form.formtastic fieldset.inputs ol li.roles_checkboxes input {
+  width: 20px;
+}
+
+/* line 708, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form.formtastic fieldset.inputs ol .ad_form_display_format {
+  margin-left: 60px;
+  padding-bottom: 20px;
+}
+/* line 711, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form.formtastic fieldset.inputs ol .ad_form_display_format li {
+  display: inline;
+  padding: 0px;
+}
+/* line 714, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form.formtastic fieldset.inputs ol .ad_form_display_format li label {
+  display: none;
+}
+
+/* line 719, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form.formtastic fieldset.inputs ol .ad_form_display_format .overlay_start {
+  margin-top: 10px;
+}
+/* line 721, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form.formtastic fieldset.inputs ol .ad_form_display_format .overlay_start input#jw_player_player_rg_ads__ovr_start {
+  width: 30px;
+  height: 10px;
+}
+/* line 725, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form.formtastic fieldset.inputs ol .ad_form_display_format .overlay_start input#player_theme_player_rg_ads__ovr_start {
+  width: 30px;
+  height: 10px;
+}
+
+/* line 733, ../../app/stylesheets/partner/_realgravity_partner_style.scss */
+form#player_form.formtastic div#player_name_area li#jw_player_name_input.string label {
+  padding-right: 10px;
+}
+
+/* line 1, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker {
+  width: 356px;
+  height: 176px;
+  overflow: hidden;
+  position: absolute;
+  background: url(/images/colorpicker/colorpicker_background.png);
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
+  display: none;
+}
+
+/* line 11, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_color {
+  width: 150px;
+  height: 150px;
+  left: 14px;
+  top: 13px;
+  position: absolute;
+  background: #f00;
+  overflow: hidden;
+  cursor: crosshair;
+}
+/* line 20, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_color div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: url(/images/colorpicker/colorpicker_overlay.png);
+}
+/* line 27, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_color div div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  overflow: hidden;
+  background: url(/images/colorpicker/colorpicker_select.gif);
+  margin: -5px 0 0 -5px;
+}
+
+/* line 37, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_hue {
+  position: absolute;
+  top: 13px;
+  left: 171px;
+  width: 35px;
+  height: 150px;
+  cursor: n-resize;
+}
+/* line 44, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_hue div {
+  position: absolute;
+  width: 35px;
+  height: 9px;
+  overflow: hidden;
+  background: url(/images/colorpicker/colorpicker_indic.gif) left top;
+  margin: -4px 0 0 0;
+  left: 0px;
+}
+
+/* line 53, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_new_color {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  left: 213px;
+  top: 13px;
+  background: #f00;
+}
+
+/* line 61, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_current_color {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  left: 283px;
+  top: 13px;
+  background: #f00;
+}
+
+/* line 69, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: absolute;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #898989;
+  top: 4px;
+  right: 11px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  height: 11px;
+}
+
+/* line 83, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_hex {
+  position: absolute;
+  width: 72px;
+  height: 22px;
+  background: url(/images/colorpicker/colorpicker_hex.png) top;
+  left: 212px;
+  top: 142px;
+}
+/* line 90, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_hex input {
+  right: 6px;
+}
+
+/* line 93, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_field {
+  height: 22px;
+  width: 62px;
+  background-position: top;
+  position: absolute;
+}
+/* line 98, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_field span {
+  position: absolute;
+  width: 12px;
+  height: 22px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  cursor: n-resize;
+}
+
+/* line 107, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_rgb_r {
+  background-image: url(/images/colorpicker/colorpicker_rgb_r.png);
+  top: 52px;
+  left: 212px;
+}
+
+/* line 112, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_rgb_g {
+  background-image: url(/images/colorpicker/colorpicker_rgb_g.png);
+  top: 82px;
+  left: 212px;
+}
+
+/* line 117, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_rgb_b {
+  background-image: url(/images/colorpicker/colorpicker_rgb_b.png);
+  top: 112px;
+  left: 212px;
+}
+
+/* line 122, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_hsb_h {
+  background-image: url(/images/colorpicker/colorpicker_hsb_h.png);
+  top: 52px;
+  left: 282px;
+}
+
+/* line 127, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_hsb_s {
+  background-image: url(/images/colorpicker/colorpicker_hsb_s.png);
+  top: 82px;
+  left: 282px;
+}
+
+/* line 132, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_hsb_b {
+  background-image: url(/images/colorpicker/colorpicker_hsb_b.png);
+  top: 112px;
+  left: 282px;
+}
+
+/* line 137, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_submit {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: url(/images/colorpicker/colorpicker_submit.png) top;
+  left: 322px;
+  top: 142px;
+  overflow: hidden;
+}
+
+/* line 146, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_focus {
+  background-position: center;
+}
+
+/* line 149, ../../app/stylesheets/_colorpicker.scss */
+.colorpicker_hex.colorpicker_focus, .colorpicker_submit.colorpicker_focus, .colorpicker_slider {
+  background-position: bottom;
+}
+
+/* Firefox3-specific CSS property */
+@-moz-document url-prefix() {
+  /* line 9, ../../app/stylesheets/_realgravity_hacks.scss */
+  form.formtastic fieldset.inputs ol li.radio fieldset ol {
+    margin-left: 10.5em;
+    margin-top: -2.5em;
+  }
+  /* line 17, ../../app/stylesheets/_realgravity_hacks.scss */
+  form.formtastic fieldset.inputs ol li.date fieldset ol {
+    margin-left: 10.5em;
+    /*				margin-top:-2em;*/
+  }
+  /* line 22, ../../app/stylesheets/_realgravity_hacks.scss */
+  form.formtastic fieldset.inputs ol li select {
+    padding: 0px;
+  }
+
+  /* line 26, ../../app/stylesheets/_realgravity_hacks.scss */
+  a.button {
+    padding: 8px 9px 7px 9px;
+  }
+
+  /* line 30, ../../app/stylesheets/_realgravity_hacks.scss */
+  #players form.formtastic fieldset.inputs ol li label {
+    width: 9em;
+  }
+
+  /* line 34, ../../app/stylesheets/_realgravity_hacks.scss */
+  #players form.formtastic fieldset.inputs ol li input, #players form.formtastic fieldset.inputs ol li textarea {
+    width: 60%;
+  }
+
+  /* line 39, ../../app/stylesheets/_realgravity_hacks.scss */
+  #volume_field ol {
+    display: inline;
+  }
+  /* line 41, ../../app/stylesheets/_realgravity_hacks.scss */
+  #volume_field ol li {
+    width: 40%;
+    float: left;
+  }
+  /* line 44, ../../app/stylesheets/_realgravity_hacks.scss */
+  #volume_field ol li #volume {
+    width: 20px;
+  }
+  /* line 47, ../../app/stylesheets/_realgravity_hacks.scss */
+  #volume_field ol li #volume_slider {
+    margin-top: 8px;
+    width: 150px;
+  }
+}
+
+/* Web-kit-specific CSS property (Safaric & Chrome) */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* line 63, ../../app/stylesheets/_realgravity_hacks.scss */
+  form.formtastic fieldset.inputs ol li.date fieldset ol li.date legend {
+    padding: 0 0px;
+    font-size: 100%;
+  }
+  /* line 67, ../../app/stylesheets/_realgravity_hacks.scss */
+  form.formtastic fieldset.inputs ol li.date fieldset ol li.date ol li {
+    display: inline;
+  }
+  /* line 70, ../../app/stylesheets/_realgravity_hacks.scss */
+  form.formtastic fieldset.inputs ol li.date fieldset ol li.date ol li label {
+    display: none;
+  }
+
+  /* line 76, ../../app/stylesheets/_realgravity_hacks.scss */
+  a.button {
+    padding: 7px 9px 5px;
+  }
+}

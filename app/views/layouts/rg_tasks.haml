@@ -1,14 +1,58 @@
 !!! Strict
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
+    / %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
+    / %meta{:content => "text/css", "http-equiv" => "content-style-type"}/
+    / %meta{:content => "text/javascript", "http-equiv" => "content-script-type"}/
+    / - if AppConfig.on_line        
+    /   <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    / - else
+    /   = stylesheet_link_tag 'jquery-ui-1.8.11.custom.css', :media => 'screen, projection', :type => 'text/css'
+    / = stylesheet_link_tag 'universal.css', :media => 'screen, projection', :type => 'text/css'
+    / = stylesheet_link_tag 'administration_screen.css', :media => 'screen, projection', :type => 'text/css'
+    / = stylesheet_link_tag 'jquery.jqplot.min.css', :media => 'screen, projection', :type => 'text/css'
+    / - if AppConfig.on_line
+    /   %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js", :type => "text/javascript"}
+    /   %script{:src => "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.js", :type => "text/javascript"}
+    / - else
+    /   = javascript_include_tag 'jquery-1.5.2.min', 'jquery-ui-1.8.11.custom.min'
+    / = javascript_include_tag 'jquery.form', 'colorpicker', 'swfobject', 'jquery.metadata.js', "FusionCharts",'partner', 'administration', 'jquery.jqplot', 'underscore-min', 'jquery.select-autocomplete', 'doAutocomplete', 'universal', 'jquery-ui-inlinedatepicker', :cache => 'cache/admin_js'
+    
     %title= h(yield(:title) || "Cypher" )
-    = stylesheet_link_tag 'application'
+    /= stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'cypher'
     = javascript_include_tag 'jquery'
     = yield(:head)
   %body
-    #container
-      - flash.each do |name, msg|
-        = content_tag :div, msg, :id => "flash_#{name}"
-      - if show_title?
-        %h1= h yield(:title)
-      = yield
+    #header
+      .inner-container.clearfix
+        %h1#logo
+          %a.home{:href => "/", :title => "Go to Realgravity homepage"}
+            %img{:src => "/images/realgravity_logo.png", :width => "250"}/
+          / %span.ir
+    #nav.admin
+      .inner-container.clearfix
+        .top-menu
+          %ul.dropdown
+            %li.root-item.dashboard_menu
+              %a{:href => "/rg_tasks"} scheduler
+            %li.root-item.networks_menu
+              %a{:href => "#nogo"} console
+            %li.root-item.companies_menu
+              %a{:href => "#nogo"} history
+            %li.root-item.contracts_menu
+              %a{:href => "#nogo"} feeds
+            %li.root-item.users_menu
+              %a{:href => "#nogo"} transcoder
+            %li.root-item.publishers_menu
+              %a{:href => "#nogo"} reporting
+            %li.root-item.domains_menu
+              %a{:href => "#nogo"} system health
+            %li.root-item.providers_menu
+              %a{:href => "#nogo"} alerts
+    
+    #container.admin
+      .content
+        = yield
+    #footer.admin
+      %p &copy; RealGravity Inc, 2010 </p>

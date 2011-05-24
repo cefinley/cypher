@@ -1,0 +1,21 @@
+%html
+  %h1 How to read Cron object from the schedule field
+  %body
+    *    *    *    *    *  command to be executed
+    %br/
+    \-    -    -    -    -
+    %br/
+    |    |    |    |    |
+    %br/
+    |    |    |    |    |
+    %br/
+    |    |    |    |    +----- day of week (0 - 7) (Sunday=0 or 7)
+    %br/
+    |    |    |    +---------- month (1 - 12)
+    %br/
+    |    |    +--------------- day of month (1 - 31)
+    %br/
+    |    +-------------------- hour (0 - 23)
+    %br/
+    +------------------------- min (0 - 59)
+    %br/

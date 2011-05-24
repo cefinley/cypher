@@ -1,37 +1,27 @@
-= will_paginate @rg_tasks
-%table{:cellpadding => "10"}
-  %tr
-    %th
-    %th Task Title
-    %th Provider
-    %th Schedule
-    //%th Type
-    //%th Namespace
-    //%th Worker
-    //%th Operation
-    //%th Url
-    //%th Schema
-    //%th Skip Rehosting
-    //%th Disable Validation
-    //%th Update if exists
-    //%th Incremental
-  - @rg_tasks.each do |rg_task|
+= will_paginate @rg_tasks    
+%table{:cellspacing => "0"}
+  %thead
     %tr
-      %td= link_to 'Show Detail', rg_task
-      %td= h rg_task.task_title
-      %td= h rg_task.provider
-      %td= h rg_task.schedule
-      //%td= h rg_task.worktype
-      //%td= h rg_task.namespace
-      //%td= h rg_task.worker
-      //%td= h rg_task.operation
-      //%td= h rg_task.url
-      //%td= h rg_task.schema
-      //%td= h rg_task.skip_rehosting
-      //%td= h rg_task.disable_validation
-      //%td= h rg_task.update_if_exists
-      //%td= h rg_task.incremental
-      %td= link_to 'Edit', edit_rg_task_path(rg_task)
-      %td= link_to 'Destroy', rg_task, :confirm => 'Are you sure?', :method => :delete 
-      %td= link_to 'Run Now'
+      %th 
+        %b Task Title
+      %th 
+        %b Provider
+      %th 
+        %b Schedule
+      %th
+        %b Options
+      %td 
+  %tbody
+    - @rg_tasks.each do |rg_task|
+      %tr.first
+        / .first for first row of the table (only if there is thead)
+        %td= h rg_task.task_title
+        %td= h rg_task.provider
+        %td= h rg_task.schedule
+        %td
+          = link_to image_tag("led-ico/application_view_detail.png"), rg_task
+          = link_to image_tag("led-ico/pencil.png"), edit_rg_task_path(rg_task)
+          = link_to image_tag("led-ico/delete.png"), rg_task, :confirm => 'Are you sure you want to delete this task?', :method => :delete 
+          = link_to image_tag("led-ico/control_play.png"), rg_task , :confirm => 'Are you sure you want to run this task once now?'
+          = link_to image_tag("led-ico/control_pause.png"), rg_task , :confirm => 'Are you sure you want to suspend this task?'
 = will_paginate @rg_tasks
